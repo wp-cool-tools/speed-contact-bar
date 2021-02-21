@@ -3,7 +3,7 @@
  * Options Page
  *
  * @package   Speed_Contact_Bar
- * @author    Martin Stehle <shop@stehle-internet.de>
+ * @author    Kybernetik Services <wordpress@kybernetik.com.de>
  * @license   GPL-2.0+
  * @link      https://wordpress.org/plugins/speed-contact-bar/
  * @copyright 2014 

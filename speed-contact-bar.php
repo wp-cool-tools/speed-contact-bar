@@ -1,7 +1,7 @@
 <?php
 /**
  * @package   Speed_Contact_Bar
- * @author    Martin Stehle <shop@stehle-internet.de>
+ * @author    Kybernetik Services <wordpress@kybernetik.com.de>
  * @license   GPL-2.0+
  * @link      http://wordpress.org/plugins/speed-contact-bar/
  * @copyright 2014 
@@ -10,11 +10,11 @@
  * Plugin Name:       Speed Contact Bar
  * Plugin URI:        http://wordpress.org/plugins/speed-contact-bar/
  * Description:       Let your website visitors get in touch with you easily with permanent seen contact informations
- * Version:           6.9.0
+ * Version:           6.9.1
  * Requires at least: 3.5
  * Requires PHP:      5.2
- * Author:            Alexandra Mutter, Martin Stehle
- * Author URI:        http://www.stehle-internet.de/
+ * Author:            Kybernetik Services
+ * Author URI:        https://www.kybernetik-services.com/?utm_source=wordpress_org&utm_medium=plugin&utm_campaign=speed-contact-bar&utm_content=author
  * Text Domain:       speed-contact-bar
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt

@@ -1,10 +1,11 @@
 === Speed Contact Bar ===
-Contributors: Hinjiriyo, allamoda07
+Contributors: kybernetikservices, Hinjiriyo
+Donate link: https://www.paypal.com/donate?hosted_button_id=7DTVATTU3W6A6
 Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb, instagram, linkedin, phone, pinterest, position, responsive, skype, slideshare, snapchat, social media, soundcloud, telegram, tumblr, twitter, vimeo, xing, yelp, youtube
 Requires at least: 3.5
 Requires PHP: 5.2
-Tested up to: 5.6
-Stable tag: 6.9.0
+Tested up to: 5.6.1
+Stable tag: 6.9.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -337,6 +338,10 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 2. The options page of the contact bar in the WordPress backend
 
 == Changelog ==
+
+= 6.9.1 =
+* new branding
+* Successfully tested with WP 5.6.1
 
 = 6.9.0 =
 * Added Messenger option
