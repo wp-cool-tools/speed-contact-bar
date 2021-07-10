@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Speed Contact Bar\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/speed-contact-bar\n"
 "POT-Creation-Date: 2020-12-17 00:02+0100\n"
-"PO-Revision-Date: 2021-02-21 20:41+0000\n"
+"PO-Revision-Date: 2021-07-10 19:25+0000\n"
 "Last-Translator: \n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -45,6 +45,17 @@ msgstr "640px"
 #: admin/class-speed-contact-bar-admin.php:656
 msgid "768px"
 msgstr "768px"
+
+#: admin/class-speed-contact-bar-admin.php:642
+msgid ""
+"A 404 Not Found Page: when a page is displayed in case of a broken link."
+msgstr ""
+"Die 404 Not Found Seite: Wenn eine Seite bei einem defekten Link angezeigt "
+"wird."
+
+#: admin/class-speed-contact-bar-admin.php:641
+msgid "A Search Result Page: when a search result page is being displayed."
+msgstr "Eine Suchergebnisseite: Wenn eine Suchergebnisseite angezeigt wird."
 
 #: admin/class-speed-contact-bar-admin.php:778
 msgid ""
@@ -93,6 +104,38 @@ msgstr ""
 #: admin/class-speed-contact-bar-admin.php:721
 msgid "Activate to show the headline"
 msgstr "Aktivieren, um die Überschrift anzuzeigen"
+
+#: admin/class-speed-contact-bar-admin.php:639
+msgid ""
+"Any Archive Page: when any type of archive page is being displayed. Category,"
+" tag, author and date based pages are types of archives."
+msgstr ""
+"Beliebige Archivseite: Wenn eine beliebige Art von Archivseite angezeigt "
+"wird. Kategorie-, Tag-, Autor- und Datumsseiten sind Archivtypen."
+
+#: admin/class-speed-contact-bar-admin.php:638
+msgid ""
+"Any Attachment Page: when an attachment document is being displayed. An "
+"attachment is an image or other file."
+msgstr ""
+"Beliebige Anhangsseite: Wenn ein Anhang, zum Beispiel ein Bild, angezeigt "
+"wird."
+
+#: admin/class-speed-contact-bar-admin.php:640
+msgid "Any Author Page: when any author page is being displayed."
+msgstr "Beliebige Autorenseite: Wenn eine Autorenseite angezeigt wird."
+
+#: admin/class-speed-contact-bar-admin.php:637
+msgid "Any Single Page: when any page (not post) is being displayed."
+msgstr ""
+"Beliebige Einzelseite: Wenn eine beliebige Seite (kein Beitrag) angezeigt "
+"wird."
+
+#: admin/class-speed-contact-bar-admin.php:636
+msgid ""
+"Any Single Post Page: when a single post of the blog is being displayed."
+msgstr ""
+"Beliebige Beitragsseite: Wenn ein einzelner Beitrag des Blogs angezeigt wird."
 
 #: admin/class-speed-contact-bar-admin.php:738
 msgid "Appeareance of texts and links"
@@ -421,6 +464,8 @@ msgid ""
 "Let your website visitors get in touch with you easily with permanent seen "
 "contact informations"
 msgstr ""
+"Zeige permanent sichtbare Kontaktinformationen damit deine Webseiten-"
+"Besuchern mit Dir Kontakt treten."
 
 #: admin/class-speed-contact-bar-admin.php:767
 msgid "Link Color"
@@ -628,6 +673,14 @@ msgstr "Textausrichtung"
 #: admin/class-speed-contact-bar-admin.php:762
 msgid "Text Color"
 msgstr "Textfarbe"
+
+#: admin/class-speed-contact-bar-admin.php:634
+msgid ""
+"The Front Page: when the front page of the site is displayed, regardless of "
+"whether it is set to show posts or a static page."
+msgstr ""
+"Die Startseite: Wenn die Startseite angezeigt wird, unabhängig davon, ob sie "
+"auf die Anzeige von Beiträgen oder einer statischen Seite eingestellt ist."
 
 #: public/class-speed-contact-bar.php:584
 #, php-format

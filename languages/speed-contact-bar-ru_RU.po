@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Speed Contact Bar 4.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/speed-contact-bar\n"
 "POT-Creation-Date: 2020-12-17 00:12+0100\n"
-"PO-Revision-Date: 2021-02-21 20:41+0000\n"
+"PO-Revision-Date: 2021-07-10 19:21+0000\n"
 "Last-Translator: Martin Stehle <m.stehle@gmx.de>\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -45,6 +45,15 @@ msgstr "640px"
 #: admin/class-speed-contact-bar-admin.php:656
 msgid "768px"
 msgstr "768px"
+
+#: admin/class-speed-contact-bar-admin.php:642
+msgid ""
+"A 404 Not Found Page: when a page is displayed in case of a broken link."
+msgstr ""
+
+#: admin/class-speed-contact-bar-admin.php:641
+msgid "A Search Result Page: when a search result page is being displayed."
+msgstr ""
 
 #: admin/class-speed-contact-bar-admin.php:778
 msgid ""
@@ -90,6 +99,31 @@ msgstr ""
 #: admin/class-speed-contact-bar-admin.php:721
 msgid "Activate to show the headline"
 msgstr "Активировать, чтобы показать заголовок"
+
+#: admin/class-speed-contact-bar-admin.php:639
+msgid ""
+"Any Archive Page: when any type of archive page is being displayed. Category,"
+" tag, author and date based pages are types of archives."
+msgstr ""
+
+#: admin/class-speed-contact-bar-admin.php:638
+msgid ""
+"Any Attachment Page: when an attachment document is being displayed. An "
+"attachment is an image or other file."
+msgstr ""
+
+#: admin/class-speed-contact-bar-admin.php:640
+msgid "Any Author Page: when any author page is being displayed."
+msgstr ""
+
+#: admin/class-speed-contact-bar-admin.php:637
+msgid "Any Single Page: when any page (not post) is being displayed."
+msgstr ""
+
+#: admin/class-speed-contact-bar-admin.php:636
+msgid ""
+"Any Single Post Page: when a single post of the blog is being displayed."
+msgstr ""
 
 #: admin/class-speed-contact-bar-admin.php:738
 msgid "Appeareance of texts and links"
@@ -618,6 +652,12 @@ msgstr "Выравнивание текста"
 #: admin/class-speed-contact-bar-admin.php:762
 msgid "Text Color"
 msgstr "Цвет текста"
+
+#: admin/class-speed-contact-bar-admin.php:634
+msgid ""
+"The Front Page: when the front page of the site is displayed, regardless of "
+"whether it is set to show posts or a static page."
+msgstr ""
 
 #: public/class-speed-contact-bar.php:584
 #, php-format

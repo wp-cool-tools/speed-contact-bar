@@ -1,11 +1,11 @@
 === Speed Contact Bar ===
 Contributors: kybernetikservices, Hinjiriyo
-Donate link: https://www.paypal.com/donate?hosted_button_id=7DTVATTU3W6A6
+Donate link: https://www.paypal.com/donate?hosted_button_id=NSEQX73VHXKS8
 Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb, instagram, linkedin, phone, pinterest, position, responsive, skype, slideshare, snapchat, social media, soundcloud, telegram, tumblr, twitter, vimeo, xing, yelp, youtube
 Requires at least: 3.5
 Requires PHP: 5.2
-Tested up to: 5.6.1
-Stable tag: 6.9.1
+Tested up to: 5.8
+Stable tag: 6.9.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,8 +49,6 @@ There are some options you can set to let the contact bar fit to your needs. You
 2. URLs to your social media pages and profiles and
 3. many design options like colors
 
-View the video [**Installation & Configuration of Speed Contact Bar WordPress Plugin** on Youtube](https://www.youtube.com/watch?v=uLRyHyKIh8M) by Wordpress Support on August 19, 2015.
-
 = Available contact data options =
 
 You can show these three **personal contact data**:
@@ -78,15 +76,18 @@ Speed Contact Bar supports links to these **social media platforms**, as ordered
 8. SlideShare
 9. Snapchat
 10. SoundCloud
-11. Tumblr
-12. Twitter
-13. Vimeo
-14. Xing
-15. Yelp
-16. Youtube
-17. any further content you wish by using the filter hook `speed-contact-bar-icons` (as documented in FAQ section &quot;How to add and re-order list entries by using hooks&quot;).
+11. Telegram
+12. Text Messages
+13. Tumblr
+14. Twitter
+15. Vimeo
+16. WhatsApp
+17. Xing
+18. Yelp
+19. Youtube
+20. any further content you wish by using the filter hook `speed-contact-bar-icons` (as documented in FAQ section &quot;How to add and re-order list entries by using hooks&quot;).
 
-More social media plattforms will come in future.
+More social media platforms will come in future.
 
 = Design options under your fingertips =
 
@@ -339,9 +340,14 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 
 == Changelog ==
 
+= 6.9.2 =
+* fixed language issues
+* Successfully tested with WP 5.8
+
 = 6.9.1 =
 * new branding
-* Successfully tested with WP 5.6.1
+* Successfully tested with WP 5.6.2
+* Successfully tested with WP 5.7
 
 = 6.9.0 =
 * Added Messenger option
@@ -674,6 +680,8 @@ First official release
 First release for just trying it
 
 == Upgrade Notice ==
+= 6.9.2 =
+Fixed language issues and prepared for WordPress 5.8
 
 = 6.9.0 =
 Added Messenger option, successfully tested with WP 5.6
@@ -785,7 +793,6 @@ Improved headline hierarchy on options page for better accessibility since WP 4.
 
 = 4.2.1 =
 Fixed some wrong aspect ratios, refactoring, tested with WP 4.4
-
 
 = 4.2 =
 Added SoundCloud option, graphical improvements in the options page

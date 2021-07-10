@@ -6,7 +6,7 @@
  * @author    Kybernetik Services <wordpress@kybernetik.com.de>
  * @license   GPL-2.0+
  * @link      http://wordpress.org/plugins/speed-contact-bar/
- * @copyright 2014 
+ * @copyright 2021
  */
 
 /**
@@ -293,7 +293,7 @@ class Speed_Contact_Bar {
 		//add_action( 'wp_footer', array( $this, 'print_script' ) );
 
 		// set default values
-		$this->plugin_version = '6.9.0';
+		$this->plugin_version = '6.9.2';
 		$this->plugin_name = 'Speed Contact Bar';
 		$this->plugin_slug = 'speed-contact-bar';
 		$this->plugin_root_url = plugin_dir_url( __FILE__ );

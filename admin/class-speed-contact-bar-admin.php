@@ -6,7 +6,7 @@
  * @author    Kybernetik Services <wordpress@kybernetik.com.de>
  * @license   GPL-2.0+
  * @link      http://wordpress.org/plugins/speed-contact-bar/
- * @copyright 2014 
+ * @copyright 2021
  */
 
 /**
@@ -631,15 +631,15 @@ class Speed_Contact_Bar_Admin {
 						'title'   => esc_html__( 'Page types where to hide the bar', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Select the type of page to hide the bar on those pages.', 'speed-contact-bar' ),
 						'values'  => array(
-							'hide_if_is_front_page'	=> esc_html__( 'The Front Page: when the front page of the site is displayed, regardless of whether it is set to show posts or a static page.' ),
-							// 'hide_if_is_singular'	=> esc_html__( 'Any Singular Page: when a single page, single post or attachment page is displayed.' ),
-							'hide_if_is_single'		=> esc_html__( 'Any Single Post Page: when a single post of the blog is being displayed.' ),
-							'hide_if_is_page'		=> esc_html__( 'Any Single Page: when any page (not post) is being displayed.' ),
-							'hide_if_is_attachment'	=> esc_html__( 'Any Attachment Page: when an attachment document is being displayed. An attachment is an image or other file.' ),
-							'hide_if_is_archive'	=> esc_html__( 'Any Archive Page: when any type of archive page is being displayed. Category, tag, author and date based pages are types of archives.' ),
-							'hide_if_is_author'		=> esc_html__( 'Any Author Page: when any author page is being displayed.' ),
-							'hide_if_is_search'		=> esc_html__( 'A Search Result Page: when a search result page is being displayed.' ),
-							'hide_if_is_404'		=> esc_html__( 'A 404 Not Found Page: when a page is displayed in case of a broken link.' ),
+							'hide_if_is_front_page'	=> esc_html__( 'The Front Page: when the front page of the site is displayed, regardless of whether it is set to show posts or a static page.', 'speed-contact-bar' ),
+							// 'hide_if_is_singular'	=> esc_html__( 'Any Singular Page: when a single page, single post or attachment page is displayed.', 'speed-contact-bar' ),
+							'hide_if_is_single'		=> esc_html__( 'Any Single Post Page: when a single post of the blog is being displayed.', 'speed-contact-bar' ),
+							'hide_if_is_page'		=> esc_html__( 'Any Single Page: when any page (not post) is being displayed.', 'speed-contact-bar' ),
+							'hide_if_is_attachment'	=> esc_html__( 'Any Attachment Page: when an attachment document is being displayed. An attachment is an image or other file.', 'speed-contact-bar' ),
+							'hide_if_is_archive'	=> esc_html__( 'Any Archive Page: when any type of archive page is being displayed. Category, tag, author and date based pages are types of archives.', 'speed-contact-bar' ),
+							'hide_if_is_author'		=> esc_html__( 'Any Author Page: when any author page is being displayed.', 'speed-contact-bar' ),
+							'hide_if_is_search'		=> esc_html__( 'A Search Result Page: when a search result page is being displayed.', 'speed-contact-bar' ),
+							'hide_if_is_404'		=> esc_html__( 'A 404 Not Found Page: when a page is displayed in case of a broken link.', 'speed-contact-bar' ),
 						),
 					),
 					'max_viewport_width' => array(

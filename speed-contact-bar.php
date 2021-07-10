@@ -4,13 +4,13 @@
  * @author    Kybernetik Services <wordpress@kybernetik.com.de>
  * @license   GPL-2.0+
  * @link      http://wordpress.org/plugins/speed-contact-bar/
- * @copyright 2014 
+ * @copyright 2021
  *
  * @wordpress-plugin
  * Plugin Name:       Speed Contact Bar
  * Plugin URI:        http://wordpress.org/plugins/speed-contact-bar/
  * Description:       Let your website visitors get in touch with you easily with permanent seen contact informations
- * Version:           6.9.1
+ * Version:           6.9.2
  * Requires at least: 3.5
  * Requires PHP:      5.2
  * Author:            Kybernetik Services

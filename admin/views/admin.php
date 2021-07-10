@@ -6,7 +6,7 @@
  * @author    Kybernetik Services <wordpress@kybernetik.com.de>
  * @license   GPL-2.0+
  * @link      https://wordpress.org/plugins/speed-contact-bar/
- * @copyright 2014 
+ * @copyright 2021
  */
 
 ?>
