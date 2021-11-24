@@ -841,15 +841,23 @@ class Speed_Contact_Bar {
 		if ( isset( $this->stored_settings[ 'headline' ] ) and '' != $this->stored_settings[ 'headline' ] ) {
 			
 			if ( isset( $this->stored_settings[ 'headline_url' ] ) and '' != $this->stored_settings[ 'headline_url' ] ) {
-				// headline as link
-				$inject .= sprintf(
-					'<%s><a rel="nofollow" href="%s"%s>%s</a></%s>',
-					$headline_tag,
-					esc_url( $this->stored_settings[ 'headline_url' ] ),
-					$contact_target,
-					esc_html( $this->stored_settings[ 'headline' ] ),
-					$headline_tag
-				);
+
+                $nofollow = '';
+                if ( !isset( $this->stored_settings[ 'headline_url' . '_nofollow' ] ) ) {
+                    $nofollow = ' rel="nofollow"';
+                }
+
+                // headline as link
+                $inject .= sprintf(
+                    '<%s><a%s href="%s"%s>%s</a></%s>',
+                    $headline_tag,
+                    $nofollow,
+                    esc_url( $this->stored_settings[ 'headline_url' ] ),
+                    $contact_target,
+                    esc_html( $this->stored_settings[ 'headline' ] ),
+                    $headline_tag
+                );
+
 			} else {
 				// headline as plain text
 				$inject .= sprintf(
@@ -861,17 +869,23 @@ class Speed_Contact_Bar {
 			}
 		}
 
-
-		/* 
+		/*
 		 * Contact Date
 		 */
 		$contact_list = array();
 		// the postal address
 		if ( isset( $this->stored_settings[ 'address' ] ) and '' != $this->stored_settings[ 'address' ] ) {
 			if ( isset( $this->stored_settings[ 'address_url' ] ) and '' != $this->stored_settings[ 'address_url' ] ) {
+
+                $nofollow = '';
+                if ( !isset( $this->stored_settings[ 'address_url' . '_nofollow' ] ) ) {
+                    $nofollow = ' rel="nofollow"';
+                }
+
 				$contact_list[] = sprintf( 
-					'<li class="scb-address"><a rel="nofollow" href="%s"%s><img src="%sassets/images/address_%s.svg" width="%d" height="%d" alt="%s" /><span>%s</span></a></li>',
-					esc_url( $this->stored_settings[ 'address_url' ] ),
+					'<li class="scb-address"><a%s href="%s"%s><img src="%sassets/images/address_%s.svg" width="%d" height="%d" alt="%s" /><span>%s</span></a></li>',
+                    $nofollow,
+                    esc_url( $this->stored_settings[ 'address_url' ] ),
 					$contact_target,
 					$this->plugin_root_url,
 					$this->current_icon_type,
@@ -903,6 +917,12 @@ class Speed_Contact_Bar {
 		foreach ( $devices as $device => $label ) {
 			// the $device number
 			if ( isset( $this->stored_settings[ $device ] ) and '' != $this->stored_settings[ $device ] ) {
+
+                $nofollow = '';
+                if ( !isset( $this->stored_settings[ $device . '_nofollow' ] ) ) {
+                    $nofollow = ' rel="nofollow"';
+                }
+
 				$device_text = $device . '_text';
 				if ( isset( $this->stored_settings[ $device_text ] ) and '' != $this->stored_settings[ $device_text ] ) {
 					$link_text = $this->stored_settings[ $device_text ];
@@ -915,8 +935,9 @@ class Speed_Contact_Bar {
 				}
 				$link_href = $this->esc_phonenumber( $this->stored_settings[ $device ] );
 				$contact_list[] = sprintf(
-					'<li class="scb-%s"><a rel="nofollow" href="%s:%s"><img src="%sassets/images/%s_%s.svg" width="%d" height="%d" alt="%s" /><span>%s</span></a></li>',
+					'<li class="scb-%s"><a%s href="%s:%s"><img src="%sassets/images/%s_%s.svg" width="%d" height="%d" alt="%s" /><span>%s</span></a></li>',
 					$device,
+                    $nofollow,
 					$protocol,
 					$link_href,
 					$this->plugin_root_url,
@@ -933,6 +954,12 @@ class Speed_Contact_Bar {
 		// the email address
 		$device = 'email';
 		if ( isset( $this->stored_settings[ $device ] ) and is_email( $this->stored_settings[ $device ] ) ) {
+
+            $nofollow = '';
+            if ( !isset( $this->stored_settings[ $device . '_nofollow' ] ) ) {
+                $nofollow = ' rel="nofollow"';
+            }
+
 			$device_text = $device . '_text';
 			$email_address = antispambot( $this->stored_settings[ $device ] );
 			$protocol = 'mailto';
@@ -946,9 +973,10 @@ class Speed_Contact_Bar {
 				$link_text = $email_address;
 			}
 			$contact_list[] = sprintf(
-				'<li class="scb-%s"><a rel="nofollow" href="%s"><img src="%sassets/images/%s_%s.svg" width="%d" height="%d" alt="%s" /><span>%s</span></a></li>',
+				'<li class="scb-%s"><a%s href="%s"><img src="%sassets/images/%s_%s.svg" width="%d" height="%d" alt="%s" /><span>%s</span></a></li>',
 				$device,
-				$link_href,
+                $nofollow,
+                $link_href,
 				$this->plugin_root_url,
 				$device,
 				$this->current_icon_type,
@@ -967,7 +995,13 @@ class Speed_Contact_Bar {
 		);
 		foreach ( $devices as $device => $label ) {
 			if ( isset( $this->stored_settings[ $device ] ) and '' != $this->stored_settings[ $device ] ) {
-				$device_text = $device . '_text';
+
+                $nofollow = '';
+                if ( !isset( $this->stored_settings[ $device . '_nofollow' ] ) ) {
+                    $nofollow = ' rel="nofollow"';
+                }
+
+                $device_text = $device . '_text';
 				if ( isset( $this->stored_settings[ $device_text ] ) and '' != $this->stored_settings[ $device_text ] ) {
 					$link_text = sprintf( '<span>%s</span>', esc_html( $this->stored_settings[ $device_text ] ) );
 				} else {
@@ -991,9 +1025,10 @@ class Speed_Contact_Bar {
 				}
 				// build the link code
 				$contact_list[] = sprintf(
-					'<li class="scb-%s"><a rel="nofollow" href="%s"%s><img src="%sassets/images/%s" width="%d" height="%d" alt="%s" />%s</a></li>',
+					'<li class="scb-%s"><a%s href="%s"%s><img src="%sassets/images/%s" width="%d" height="%d" alt="%s" />%s</a></li>',
 					$device,
-					esc_url( $link_href ),
+                    $nofollow,
+                    esc_url( $link_href ),
 					$this->link_target,
 					$this->plugin_root_url,
 					$file_name,
@@ -1029,9 +1064,16 @@ class Speed_Contact_Bar {
 		// build the list
 		foreach ( $this->valid_social_networks as $icon ) {
 			if ( in_array( $icon, array_keys( $this->alt_aspect_ratios ) ) and isset( $this->stored_settings[ $icon ] ) and '' != $this->stored_settings[ $icon ] ) {
-				$icons_list[] = sprintf( 
-					'<li class="scb-%s"><a rel="nofollow" href="%s"%s><img src="%sassets/images/%s.png" width="%d" height="%d" alt="%s" /></a></li>',
+
+                $nofollow = '';
+                if ( !isset( $this->stored_settings[ $icon . '_nofollow' ] ) ) {
+                    $nofollow = ' rel="nofollow"';
+                }
+
+                $icons_list[] = sprintf(
+					'<li class="scb-%s"><a%s href="%s"%s><img src="%sassets/images/%s.png" width="%d" height="%d" alt="%s" /></a></li>',
 					$icon,
+                    $nofollow,
 					esc_url( $this->stored_settings[ $icon ] ),
 					$this->link_target,
 					$this->plugin_root_url,
@@ -1042,10 +1084,17 @@ class Speed_Contact_Bar {
 				);
 			} elseif ( 'skype' == $icon ) {
 				if ( isset( $this->stored_settings[ $icon ] ) and '' != $this->stored_settings[ $icon ] ) {
-					$icons_list[] = sprintf( 
-						'<li class="scb-%s"><a rel="nofollow" href="skype:%s"%s><img src="%sassets/images/%s.svg" width="%d" height="%d" alt="%s" /></a></li>',
+
+                    $nofollow = '';
+                    if ( !isset( $this->stored_settings[ $icon . '_nofollow' ] ) ) {
+                        $nofollow = ' rel="nofollow"';
+                    }
+
+                    $icons_list[] = sprintf(
+						'<li class="scb-%s"><a%s href="skype:%s"%s><img src="%sassets/images/%s.svg" width="%d" height="%d" alt="%s" /></a></li>',
 						$icon,
-						esc_attr( $this->stored_settings[ $icon ] ),
+                        $nofollow,
+                        esc_attr( $this->stored_settings[ $icon ] ),
 						$this->link_target,
 						$this->plugin_root_url,
 						$icon,
@@ -1056,16 +1105,23 @@ class Speed_Contact_Bar {
 				} // if (icon)
 			} else {
 				if ( isset( $this->stored_settings[ $icon ] ) and '' != $this->stored_settings[ $icon ] ) {
-					// bright or dark instagram icon?
+
+                    $nofollow = '';
+                    if ( !isset( $this->stored_settings[ $icon . '_nofollow' ] ) ) {
+                        $nofollow = ' rel="nofollow"';
+                    }
+
+                    // bright or dark instagram icon?
 					if ( 'instagram' == $icon ) {
 						$icon_file = sprintf( '%s_%s', $icon, $this->current_icon_type );
 					} else {
 						$icon_file = $icon;
 					}
 					$icons_list[] = sprintf( 
-						'<li class="scb-%s"><a rel="nofollow" href="%s"%s><img src="%sassets/images/%s.svg" width="%d" height="%d" alt="%s" /></a></li>',
+						'<li class="scb-%s"><a%s href="%s"%s><img src="%sassets/images/%s.svg" width="%d" height="%d" alt="%s" /></a></li>',
 						$icon,
-						esc_url( $this->stored_settings[ $icon ] ),
+                        $nofollow,
+                        esc_url( $this->stored_settings[ $icon ] ),
 						$this->link_target,
 						$this->plugin_root_url,
 						$icon_file,

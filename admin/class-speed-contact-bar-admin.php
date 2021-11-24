@@ -438,19 +438,20 @@ class Speed_Contact_Bar_Admin {
 		$this->form_structure = array(
 			'1st_section' => array(
 				'headline' => esc_html__( 'Your Contact Data', 'speed-contact-bar' ),
-				'description' => esc_html__( 'Set the contact informations. To supress displaying a field leave it empty.', 'speed-contact-bar' ),
+				'description' => esc_html__( 'Set the contact information. To suppress displaying a field leave it empty.', 'speed-contact-bar' ),
 				'options' => array(
 					'headline' => array(
 						'type'    => 'textfield',
 						'title'   => esc_html__( 'Headline', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Enter a short headline for the contact bar', 'speed-contact-bar' ),
 					),
-					'headline_url' => array(
-						'type'    => 'url',
-						'title'   => esc_html__( 'URL of the headline', 'speed-contact-bar' ),
-						'desc'    => esc_html__( 'Enter a web address and the headline becomes a link. The address must start with http:// or https://', 'speed-contact-bar' ) ,
+					'headline_url'     => array(
+						'type'         => 'url',
+						'title'        => esc_html__( 'URL of the headline', 'speed-contact-bar' ),
+						'desc'         => esc_html__( 'Enter a web address and the headline becomes a link. The address must start with http:// or https://', 'speed-contact-bar' ) ,
+                        'set_nofollow' => true
 					),
-					'address' => array(
+                    'address' => array(
 						'type'    => 'textfield',
 						'title'   => esc_html__( 'Postal address', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Enter a short postal address for the contact bar', 'speed-contact-bar' ),
@@ -459,11 +460,13 @@ class Speed_Contact_Bar_Admin {
 						'type'    => 'url',
 						'title'   => esc_html__( 'URL of the postal address', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Enter a web address and the postal address becomes a link. The web address must start with http:// or https://', 'speed-contact-bar' ) ,
+                        'set_nofollow' => true
 					),
 					'email' => array(
 						'type'    => 'email',
 						'title'   => esc_html__( 'Email Address', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Enter a valid email address. If the email address is invalid it will not be used.', 'speed-contact-bar' ),
+                        'set_nofollow' => true
 					),
 					'email_text' => array(
 						'type'    => 'textfield',
@@ -474,6 +477,7 @@ class Speed_Contact_Bar_Admin {
 						'type'    => 'textfield',
 						'title'   => esc_html__( 'Phone Number', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Enter your official contact phone number. Since web pages can be accessed worldwide the phone number should include the international dialing prefix of your country like +49 for Germany, making the number useable from any location.', 'speed-contact-bar' ),
+                        'set_nofollow' => true
 					),
 					'phone_text' => array(
 						'type'    => 'textfield',
@@ -484,6 +488,7 @@ class Speed_Contact_Bar_Admin {
 						'type'    => 'textfield',
 						'title'   => esc_html__( 'Fax Number', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Enter your official contact fax number, including the international dialing prefix of your country.', 'speed-contact-bar' ),
+                        'set_nofollow' => true
 					),
 					'fax_text' => array(
 						'type'    => 'textfield',
@@ -494,6 +499,7 @@ class Speed_Contact_Bar_Admin {
 						'type'    => 'textfield',
 						'title'   => esc_html__( 'Cell Phone Number', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Enter your official contact cell phone number, including the international dialing prefix of your country.', 'speed-contact-bar' ),
+                        'set_nofollow' => true
 					),
 					'cellphone_text' => array(
 						'type'    => 'textfield',
@@ -504,6 +510,7 @@ class Speed_Contact_Bar_Admin {
 						'type'    => 'textfield',
 						'title'   => esc_html__( 'WhatsApp Phone Number', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Enter your full telephone number in international format, e.g. 493012345678 with 49 for Germany.', 'speed-contact-bar' ),
+                        'set_nofollow' => true
 					),
 					'whatsapp_text' => array(
 						'type'    => 'textfield',
@@ -514,6 +521,7 @@ class Speed_Contact_Bar_Admin {
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Messenger' ),
 						'desc'    => $label_example . ': http://m.me/page_name<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'messenger_text' => array(
 						'type'    => 'textfield',
@@ -524,6 +532,7 @@ class Speed_Contact_Bar_Admin {
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Telegram' ),
 						'desc'    => $label_example . ': https://telegram.me/username<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'telegram_text' => array(
 						'type'    => 'textfield',
@@ -534,6 +543,7 @@ class Speed_Contact_Bar_Admin {
 						'type'    => 'textfield',
 						'title'   => esc_html__( 'SMS Number', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Enter your official contact SMS number, including the international dialing prefix of your country.', 'speed-contact-bar' ),
+                        'set_nofollow' => true
 					),
 					'sms_text' => array(
 						'type'    => 'textfield',
@@ -544,81 +554,97 @@ class Speed_Contact_Bar_Admin {
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Facebook' ),
 						'desc'    => $label_example . ': https://www.facebook.com/name<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'flickr' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Flickr' ),
 						'desc'    => $label_example . ': https://www.flickr.com/people/user-id/<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'imdb' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'IMDb' ),
 						'desc'    => $label_example . ': https://www.imdb.com/user/name<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'instagram' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Instagram' ),
 						'desc'    => $label_example . ': https://www.instagram.com/name<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'linkedin' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'LinkedIn' ),
 						'desc'    => $label_example . ': https://www.linkedin.com/in/username<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'pinterest' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Pinterest' ),
 						'desc'    => $label_example . ': http://www.pinterest.com/username<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'skype' => array(
 						'type'    => 'textfield',
 						'title'   => esc_html__( 'Your Skype name', 'speed-contact-bar' ),
 						'desc'    => esc_html__( 'Enter your Skype username, not your email address or phone number.', 'speed-contact-bar' ),
+                        'set_nofollow' => true
 					),
 					'slideshare' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'SlideShare' ),
 						'desc'    => $label_example . ': https://www.slideshare.net/channelname<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'snap' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Snapchat' ),
 						'desc'    => $label_example . ': https://www.snapchat.com/add/profilname<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'soundcloud' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'SoundCloud' ),
 						'desc'    => $label_example . ': https://soundcloud.com/name<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'tumblr' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'tumblr' ),
 						'desc'    => $label_example . ': https://blogname.tumblr.com/<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'twitter' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Twitter' ),
 						'desc'    => $label_example . ': https://www.twitter.com/username<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'vimeo' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Vimeo' ),
 						'desc'    => $label_example . ': https://vimeo.com/name<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'yelp' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Yelp' ),
 						'desc'    => $label_example . ': https://www.yelp.com/biz/name<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'youtube' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'YouTube' ),
 						'desc'    => $label_example . ': https://www.youtube.com/username<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 					'xing' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Xing' ),
 						'desc'    => $label_example . ': https://www.xing.com/profile/username<br />'. $label_enter,
+                        'set_nofollow' => true
 					),
 				),
 			),
@@ -872,13 +898,25 @@ class Speed_Contact_Bar_Admin {
 						$title = sprintf( '<label for="%s">%s</label>', $option_name, $option_values[ 'title' ] );
 						$value = isset( $this->stored_settings[ $option_name ] ) ? esc_url( $this->stored_settings[ $option_name ] ) : '';
 						$html = sprintf( '<input type="text" id="%s" name="%s[%s]" value="%s">', $option_name, $this->settings_db_slug, $option_name, $value );
-						$html .= $desc;
+                        $html .= $desc;
+                        if( isset( $option_values[ 'set_nofollow' ] ) && true === $option_values[ 'set_nofollow' ] ) {
+                            $option_name_nf = $option_name . '_nofollow';
+                            $nofollow_value = isset( $this->stored_settings[ $option_name_nf ] ) ? esc_attr( $this->stored_settings[ $option_name_nf ] ) : '0';
+                            $checked = $nofollow_value ? checked( 1, $nofollow_value, false ) : '';
+                            $html .= sprintf( '<p><input name="%s[%s]" type="checkbox" id="%s" value="1"%s /> %s</p>' , $this->settings_db_slug, $option_name_nf, $option_name_nf, $checked, __('Do not set <code>rel="nofollow"</code> to this link', 'speed-contact-bar' ) );
+                        }
 						break;
 					case 'textarea':
 						$title = sprintf( '<label for="%s">%s</label>', $option_name, $option_values[ 'title' ] );
 						$value = isset( $this->stored_settings[ $option_name ] ) ? esc_textarea( $this->stored_settings[ $option_name ] ) : '';
 						$html = sprintf( '<textarea id="%s" name="%s[%s]" cols="30" rows="5">%s</textarea>', $option_name, $this->settings_db_slug, $option_name, $value );
 						$html .= $desc;
+                        if( isset( $option_values[ 'set_nofollow' ] ) && true === $option_values[ 'set_nofollow' ] ) {
+                            $option_name_nf = $option_name . '_nofollow';
+                            $nofollow_value = isset( $this->stored_settings[ $option_name_nf ] ) ? esc_attr( $this->stored_settings[ $option_name_nf ] ) : '0';
+                            $checked = $nofollow_value ? checked( 1, $nofollow_value, false ) : '';
+                            $html .= sprintf( '<p><input name="%s[%s]" type="checkbox" id="%s" value="1"%s /> %s</p>' , $this->settings_db_slug, $option_name_nf, $option_name_nf, $checked, __('Do not set <code>rel="nofollow"</code> to this link', 'speed-contact-bar' ) );
+                        }
 						break;
 					case 'farbtastic':
 						$title = sprintf( '<label for="%s">%s</label>', $option_name, $option_values[ 'title' ] );
@@ -906,7 +944,14 @@ class Speed_Contact_Bar_Admin {
 						$value = isset( $this->stored_settings[ $option_name ] ) ? esc_attr( $this->stored_settings[ $option_name ] ) : '';
 						$html = sprintf( '<input type="text" id="%s" name="%s[%s]" value="%s">', $option_name, $this->settings_db_slug, $option_name, $value );
 						$html .= $desc;
-				} // end switch()
+                        if( isset( $option_values[ 'set_nofollow' ] ) && true === $option_values[ 'set_nofollow' ] ) {
+                            $option_name_nf = $option_name . '_nofollow';
+                            $nofollow_value = isset( $this->stored_settings[ $option_name_nf ] ) ? esc_attr( $this->stored_settings[ $option_name_nf ] ) : '0';
+                            $checked = $nofollow_value ? checked( 1, $nofollow_value, false ) : '';
+                            $html .= sprintf( '<p><input name="%s[%s]" type="checkbox" id="%s" value="1"%s /> %s</p>' , $this->settings_db_slug, $option_name_nf, $option_name_nf, $checked, __('Do not set <code>rel="nofollow"</code> to this link', 'speed-contact-bar' ) );
+                        }
+
+                } // end switch()
 
 				// register the option
 				add_settings_field(

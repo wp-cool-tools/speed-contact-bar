@@ -5,7 +5,7 @@ Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb
 Requires at least: 3.5
 Requires PHP: 5.2
 Tested up to: 5.8
-Stable tag: 6.9.2
+Stable tag: 6.10.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -340,14 +340,17 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 
 == Changelog ==
 
+= 6.10.0 =
+* added option to disable rel="nofollow" for individual contact bar links
+* updated language files
+
 = 6.9.2 =
 * fixed language issues
-* Successfully tested with WP 5.8
+* successfully tested with WP 5.8
 
 = 6.9.1 =
 * new branding
-* Successfully tested with WP 5.6.2
-* Successfully tested with WP 5.7
+* successfully tested with WP 5.7
 
 = 6.9.0 =
 * Added Messenger option
@@ -680,6 +683,10 @@ First official release
 First release for just trying it
 
 == Upgrade Notice ==
+
+= 6.10.0 =
+Improved SEO with option for setting nofollow
+
 = 6.9.2 =
 Fixed language issues and prepared for WordPress 5.8
 
