@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/donate?hosted_button_id=NSEQX73VHXKS8
 Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb, instagram, linkedin, phone, pinterest, position, responsive, skype, slideshare, snapchat, social media, soundcloud, telegram, tumblr, twitter, vimeo, xing, yelp, youtube
 Requires at least: 3.5
 Requires PHP: 5.2
-Tested up to: 5.8
+Tested up to: 5.9
 Stable tag: 6.10.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -26,6 +26,9 @@ Speed Contact Bar enables your visitors to get in contact with you quickly. The 
 The bar design is responsive and thus ready for smartphones and tablets. The social media icons are included already.
 
 Each icon appears if you set its target URL in the option page. The phone icons and numbers are clickable to trigger a phone call. The e-mail is clickable to open a mail client.
+
+= Demo =
+You want to test Speed Contact Bar before installing on your site? Try it out on your free dummy site and [click here](https://demo.tastewp.com/speed-contact-bar).
 
 = What users said =
 
