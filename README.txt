@@ -5,7 +5,7 @@ Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb
 Requires at least: 3.5
 Requires PHP: 5.2
 Tested up to: 6.2
-Stable tag: 6.10.0
+Stable tag: 6.10.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -88,7 +88,7 @@ Speed Contact Bar supports links to these **social media platforms**, as ordered
 17. Xing
 18. Yelp
 19. Youtube
-20. any further content you wish by using the filter hook `speed-contact-bar-icons` (as documented in FAQ section &quot;How to add and re-order list entries by using hooks&quot;).
+20. any further content you wish by using the filter hook `speed_contact_bar_icons` (as documented in FAQ section &quot;How to add and re-order list entries by using hooks&quot;).
 
 More social media platforms will come in future.
 
@@ -342,6 +342,9 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 2. The options page of the contact bar in the WordPress backend
 
 == Changelog ==
+
+= 6.10.1 =
+* added output title on single icons to get a tooltip on hover
 
 = 6.10.0 =
 * added option to disable rel="nofollow" for individual contact bar links

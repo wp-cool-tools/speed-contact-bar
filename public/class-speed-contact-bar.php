@@ -1118,7 +1118,7 @@ class Speed_Contact_Bar {
 						$icon_file = $icon;
 					}
 					$icons_list[] = sprintf( 
-						'<li class="scb-%s"><a%s href="%s"%s><img src="%sassets/images/%s.svg" width="%d" height="%d" alt="%s" /></a></li>',
+						'<li class="scb-%s"><a%s href="%s"%s><img src="%sassets/images/%s.svg" width="%d" height="%d" alt="%s" title="%s" /></a></li>',
 						$icon,
                         $nofollow,
                         esc_url( $this->stored_settings[ $icon ] ),
@@ -1127,7 +1127,8 @@ class Speed_Contact_Bar {
 						$icon_file,
 						$this->current_icon_size,
 						$this->current_icon_size,
-						ucfirst( $icon ) 
+						ucfirst( $icon ),
+                        ucfirst( $icon )
 					);
 				} // if (icon)
 			}// if (aspect ratio and icon)
