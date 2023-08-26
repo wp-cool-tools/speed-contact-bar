@@ -1,11 +1,11 @@
 === Speed Contact Bar ===
 Contributors: kybernetikservices, Hinjiriyo
 Donate link: https://www.paypal.com/donate?hosted_button_id=NSEQX73VHXKS8
-Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb, instagram, linkedin, phone, pinterest, position, responsive, skype, slideshare, snapchat, social media, soundcloud, telegram, tumblr, twitter, vimeo, xing, yelp, youtube
+Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb, instagram, linkedin, phone, pinterest, position, responsive, skype, slideshare, snapchat, social media, soundcloud, telegram, tumblr, twitter, X, vimeo, xing, yelp, youtube
 Requires at least: 3.5
 Requires PHP: 5.2
 Tested up to: 6.3
-Stable tag: 6.10.1
+Stable tag: 6.11.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,7 +82,7 @@ Speed Contact Bar supports links to these **social media platforms**, as ordered
 11. Telegram
 12. Text Messages
 13. Tumblr
-14. Twitter
+14. X (former Twitter)
 15. Vimeo
 16. WhatsApp
 17. Xing
@@ -338,10 +338,13 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 
 == Screenshots ==
 
-1. The contact bar in black with headline, phone number, cell phone number, e-mail address, icons of Facebook icon and Google Plus icons on top of a webpage
-2. The options page of the contact bar in the WordPress backend
+1. The contact bar with all possible icons at the top of a page
+2. The settings page of Speed Contact Bar in the backend
 
 == Changelog ==
+
+= 6.11.0 =
+* Renaming Twitter to X (new logo and adjusted wording) (maintain backward compatibility with current Twitter settings)
 
 = 6.10.1 =
 * added output title on single icons to get a tooltip on hover

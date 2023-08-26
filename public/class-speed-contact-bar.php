@@ -1041,7 +1041,7 @@ class Speed_Contact_Bar {
 		} // foreach ( $devices as $device )
 
 		/**
-		 * Filter the personal contact informations in the contact bar as list items.
+		 * Filter the personal contact information in the contact bar as list items.
 		 *
 		 * @since 4.0
 		 *
@@ -1063,7 +1063,8 @@ class Speed_Contact_Bar {
 		$icons_list = array();
 		// build the list
 		foreach ( $this->valid_social_networks as $icon ) {
-			if ( in_array( $icon, array_keys( $this->alt_aspect_ratios ) ) and isset( $this->stored_settings[ $icon ] ) and '' != $this->stored_settings[ $icon ] ) {
+
+            if ( in_array( $icon, array_keys( $this->alt_aspect_ratios ) ) and isset( $this->stored_settings[ $icon ] ) and '' != $this->stored_settings[ $icon ] ) {
 
                 $nofollow = '';
                 if ( !isset( $this->stored_settings[ $icon . '_nofollow' ] ) ) {
@@ -1113,7 +1114,12 @@ class Speed_Contact_Bar {
 
                     // bright or dark instagram icon?
 					if ( 'instagram' == $icon ) {
-						$icon_file = sprintf( '%s_%s', $icon, $this->current_icon_type );
+                        $icon_file = sprintf('%s_%s', $icon, $this->current_icon_type);
+                    } elseif ( 'twitter' == $icon ) {
+
+                        $icon_file = 'x';
+                        $icon = 'x';
+
 					} else {
 						$icon_file = $icon;
 					}
@@ -1142,8 +1148,8 @@ class Speed_Contact_Bar {
 		 * @param array $icons_list An array of social media icons as list items
 		 */
 		$icons_list = apply_filters( 'speed_contact_bar_icons', $icons_list );
-		
-		// build the list
+
+        // build the list
 		if ( ! empty( $icons_list ) ) {
 			// opens list
 			$inject .= '<ul id="scb-socialicons">';

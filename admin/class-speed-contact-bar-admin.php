@@ -310,6 +310,7 @@ class Speed_Contact_Bar_Admin {
 						default:
 							$logo_size = $background_size;
 					}
+
 					printf(
 						".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s.png') no-repeat scroll 0 %s transparent; background-size: %s; }",
 						$name,
@@ -319,14 +320,30 @@ class Speed_Contact_Bar_Admin {
 						$logo_size
 					);
 				} else {
-					printf(
-						".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s.svg') no-repeat scroll 0 %s transparent; background-size: %s; }",
-						$name,
-						$root_url,
-						$name,
-						$background_position,
-						$background_size
-					);
+
+                    if( 'twitter' == $name ) {
+                        printf(
+                            ".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s.svg') no-repeat scroll 0 %s transparent; background-size: %s; }",
+                            $name,
+                            $root_url,
+                            'x',
+                            $background_position,
+                            $background_size
+                        );
+                    }
+                    else {
+
+                        printf(
+                            ".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s.svg') no-repeat scroll 0 %s transparent; background-size: %s; }",
+                            $name,
+                            $root_url,
+                            $name,
+                            $background_position,
+                            $background_size
+                        );
+
+                    }
+
 				}
 				print "\n";
 			}
@@ -618,7 +635,7 @@ class Speed_Contact_Bar_Admin {
 					),
 					'twitter' => array(
 						'type'    => 'url',
-						'title'   => sprintf( $label_url, 'Twitter' ),
+						'title'   => sprintf( $label_url, 'X (former Twitter)' ),
 						'desc'    => $label_example . ': https://www.twitter.com/username<br />'. $label_enter,
                         'set_nofollow' => true
 					),
