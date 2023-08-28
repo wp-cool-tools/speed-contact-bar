@@ -276,7 +276,6 @@ class Speed_Contact_Bar {
 	private function __construct() {
 
 		// Load plugin text domain
-		add_action( 'init', array( $this, 'load_plugin_textdomain' ) );
 		add_action( 'init', array( $this, 'apply_stored_settings' ) );
 
 		// Activate plugin when new blog is added
@@ -574,8 +573,6 @@ class Speed_Contact_Bar {
 		if ( ! version_compare( $GLOBALS['wp_version'], $required_wp_version, '>=' ) ) {
 			// deactivate plugin
 			deactivate_plugins( plugin_basename( __FILE__ ), false, is_network_admin() );
-			// load language file for a message in the language of the WP installation
-			self::load_plugin_textdomain();
 			// stop WP request and display the message with backlink. Is there a proper way than wp_die()?
 			$title = 'WordPress &rsaquo; Error';
 			wp_die( 

@@ -5,7 +5,7 @@ Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb
 Requires at least: 3.5
 Requires PHP: 5.2
 Tested up to: 6.3
-Stable tag: 6.12.1
+Stable tag: 6.12.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -335,6 +335,9 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 2. The settings page of Speed Contact Bar in the backend
 
 == Changelog ==
+
+= 6.12.1.1 =
+* hotfix white screen
 
 = 6.12.1 =
 * fixed the previous fix where "nofollow" was sometimes set incorrectly
