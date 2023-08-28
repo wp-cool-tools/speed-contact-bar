@@ -10,7 +10,7 @@
  * Plugin Name:       Speed Contact Bar
  * Plugin URI:        http://wordpress.org/plugins/speed-contact-bar/
  * Description:       Let your website visitors get in touch with you easily with permanent seen contact information
- * Version:           6.11.0
+ * Version:           6.12.1
  * Requires at least: 3.5
  * Requires PHP:      5.2
  * Author:            Kybernetik Services
@@ -18,7 +18,6 @@
  * Text Domain:       speed-contact-bar
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Domain Path:       /languages
  */
 
 // If this file is called directly, abort.

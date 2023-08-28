@@ -756,17 +756,6 @@ class Speed_Contact_Bar {
 	}
 
 	/**
-	 * Load the plugin text domain for translation.
-	 *
-	 * @since    1.0
-	 */
-	public function load_plugin_textdomain() {
-
-		load_plugin_textdomain( $this->plugin_slug, false, dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/' );
-
-	}
-
-	/**
 	 * Register and enqueue public-facing style sheet.
 	 *
 	 * @since    1.0
@@ -1118,9 +1107,8 @@ class Speed_Contact_Bar {
                     } elseif ( 'twitter' == $icon ) {
 
                         $icon_file = 'x';
-                        $icon = 'x';
 
-					} else {
+                    } else {
 						$icon_file = $icon;
 					}
 					$icons_list[] = sprintf( 

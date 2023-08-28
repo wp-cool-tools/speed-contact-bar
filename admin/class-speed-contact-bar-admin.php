@@ -635,7 +635,7 @@ class Speed_Contact_Bar_Admin {
 					),
 					'twitter' => array(
 						'type'    => 'url',
-						'title'   => sprintf( $label_url, 'X (former Twitter)' ),
+						'title'   => sprintf( $label_url, esc_html__( 'X (former Twitter)', 'speed-contact-bar' ) ),
 						'desc'    => $label_example . ': https://www.twitter.com/username<br />'. $label_enter,
                         'set_nofollow' => true
 					),

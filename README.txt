@@ -5,7 +5,7 @@ Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb
 Requires at least: 3.5
 Requires PHP: 5.2
 Tested up to: 6.3
-Stable tag: 6.11.0
+Stable tag: 6.12.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -126,17 +126,10 @@ Do you miss some options? We will add it! Please write your request in the plugi
 
 Read the FAQ section &quot;How to add and re-order list entries by using hooks&quot; about how to use the plugin's hooks.
 
-= Available Languages =
+= Languages =
 
-The user interface is available in
-
-* English
-* Spanish (Español)
-* Russian (ру́сский), kindly drawn up by [Igor](https://wordpress.org/support/profile/bakard)
-* German (Deutsch)
-* Polish (Polski), kindly drawn up by [Marcin Mikolajczyk](https://wordpress.org/support/profile/marcinmik)
-
-Further translations are welcome. If you want to give in your translation please leave a notice in the [plugin's support forum](https://wordpress.org/support/plugin/speed-contact-bar).
+Speed Contact Bar translations are served by wp.org.
+Your language is missing? Please be part of the community and help to translate Speed Contact Bar on [GlotPress](https://translate.wordpress.org/projects/wp-plugins/speed-contact-bar/). Thank you!
 
 = Installation by Using the WordPress Dashboard =
 
@@ -343,8 +336,16 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 
 == Changelog ==
 
+= 6.12.1 =
+* fixed the previous fix where "nofollow" was sometimes set incorrectly
+
+= 6.12.0 =
+* fixed no link on X logo anymore
+* fixed where "nofollow" was sometimes set incorrectly
+* we get now plugin’s translation from wp.org
+
 = 6.11.0 =
-* Renaming Twitter to X (new logo and adjusted wording) (maintain backward compatibility with current Twitter settings)
+* renaming Twitter to X (new logo and adjusted wording) (maintain backward compatibility with current Twitter settings)
 
 = 6.10.1 =
 * added output title on single icons to get a tooltip on hover
