@@ -1,7 +1,7 @@
 === Speed Contact Bar ===
 Contributors: kybernetikservices, Hinjiriyo
 Donate link: https://www.paypal.com/donate?hosted_button_id=NSEQX73VHXKS8
-Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb, instagram, linkedin, phone, pinterest, position, responsive, skype, slideshare, snapchat, social media, soundcloud, telegram, tumblr, twitter, X, vimeo, xing, yelp, youtube
+Tags: contact, bar, address, social, social media
 Requires at least: 3.5
 Requires PHP: 5.2
 Tested up to: 6.5
