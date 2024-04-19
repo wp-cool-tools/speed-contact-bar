@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Speed Contact Bar 4.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/speed-contact-bar\n"
 "POT-Creation-Date: 2020-12-17 00:12+0100\n"
-"PO-Revision-Date: 2021-11-24 20:36+0000\n"
+"PO-Revision-Date: 2024-04-19 17:07+0000\n"
 "Last-Translator: Martin Stehle <m.stehle@gmx.de>\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -21,41 +21,41 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/class-speed-contact-bar-admin.php:675
-#: admin/class-speed-contact-bar-admin.php:682
+#: admin/class-speed-contact-bar-admin.php:692
+#: admin/class-speed-contact-bar-admin.php:699
 msgid "1024px"
 msgstr "1024px"
 
-#: admin/class-speed-contact-bar-admin.php:675
-#: admin/class-speed-contact-bar-admin.php:682
+#: admin/class-speed-contact-bar-admin.php:692
+#: admin/class-speed-contact-bar-admin.php:699
 msgid "320px"
 msgstr "320px"
 
-#: admin/class-speed-contact-bar-admin.php:675
-#: admin/class-speed-contact-bar-admin.php:682
+#: admin/class-speed-contact-bar-admin.php:692
+#: admin/class-speed-contact-bar-admin.php:699
 msgid "480px"
 msgstr "480px"
 
-#: admin/class-speed-contact-bar-admin.php:675
-#: admin/class-speed-contact-bar-admin.php:682
+#: admin/class-speed-contact-bar-admin.php:692
+#: admin/class-speed-contact-bar-admin.php:699
 msgid "640px"
 msgstr "640px"
 
-#: admin/class-speed-contact-bar-admin.php:675
-#: admin/class-speed-contact-bar-admin.php:682
+#: admin/class-speed-contact-bar-admin.php:692
+#: admin/class-speed-contact-bar-admin.php:699
 msgid "768px"
 msgstr "768px"
 
-#: admin/class-speed-contact-bar-admin.php:668
+#: admin/class-speed-contact-bar-admin.php:685
 msgid ""
 "A 404 Not Found Page: when a page is displayed in case of a broken link."
 msgstr ""
 
-#: admin/class-speed-contact-bar-admin.php:667
+#: admin/class-speed-contact-bar-admin.php:684
 msgid "A Search Result Page: when a search result page is being displayed."
 msgstr ""
 
-#: admin/class-speed-contact-bar-admin.php:804
+#: admin/class-speed-contact-bar-admin.php:821
 msgid ""
 "Activate to exclude the links of the postal address and the headline from "
 "the previous option to open them in the same window"
@@ -63,11 +63,11 @@ msgstr ""
 "Активировать, чтобы исключить ссылки почтового адреса и заголовка из "
 "предыдущего варианта, чтобы открыть их в том же окне"
 
-#: admin/class-speed-contact-bar-admin.php:721
+#: admin/class-speed-contact-bar-admin.php:738
 msgid "Activate to ignore the background color and to show a transparent bar"
 msgstr "Активируйте, чтобы игнорировать цвет фона и показать прозрачную панель"
 
-#: admin/class-speed-contact-bar-admin.php:752
+#: admin/class-speed-contact-bar-admin.php:769
 msgid ""
 "Activate to keep displaying the headline in tablets and smartphones, else it "
 "will be hidden"
@@ -75,7 +75,7 @@ msgstr ""
 "Активировать, чтобы отображать заголовок в планшетах и смартфонах, иначе он "
 "будет скрыт"
 
-#: admin/class-speed-contact-bar-admin.php:770
+#: admin/class-speed-contact-bar-admin.php:787
 msgid ""
 "Activate to keep the postal address, phone numbers and mail address "
 "displayed in small displays"
@@ -83,12 +83,12 @@ msgstr ""
 "Активировать, чтобы почтовый адрес, номера телефонов и почтовый адрес "
 "отображались на небольших дисплеях"
 
-#: admin/class-speed-contact-bar-admin.php:799
+#: admin/class-speed-contact-bar-admin.php:816
 msgid "Activate to let the links load the target site in new windows or tabs"
 msgstr ""
 "Активировать, чтобы ссылки загружали целевой сайт в новые окна или вкладки"
 
-#: admin/class-speed-contact-bar-admin.php:736
+#: admin/class-speed-contact-bar-admin.php:753
 msgid ""
 "Activate to show a slight shadow under or above the bar depending on the "
 "position of the bar"
@@ -96,97 +96,97 @@ msgstr ""
 "Активировать, чтобы показать небольшую тень под или над баром в зависимости "
 "от положения бара"
 
-#: admin/class-speed-contact-bar-admin.php:747
+#: admin/class-speed-contact-bar-admin.php:764
 msgid "Activate to show the headline"
 msgstr "Активировать, чтобы показать заголовок"
 
-#: admin/class-speed-contact-bar-admin.php:665
+#: admin/class-speed-contact-bar-admin.php:682
 msgid ""
 "Any Archive Page: when any type of archive page is being displayed. Category,"
 " tag, author and date based pages are types of archives."
 msgstr ""
 
-#: admin/class-speed-contact-bar-admin.php:664
+#: admin/class-speed-contact-bar-admin.php:681
 msgid ""
 "Any Attachment Page: when an attachment document is being displayed. An "
 "attachment is an image or other file."
 msgstr ""
 
-#: admin/class-speed-contact-bar-admin.php:666
+#: admin/class-speed-contact-bar-admin.php:683
 msgid "Any Author Page: when any author page is being displayed."
 msgstr ""
 
-#: admin/class-speed-contact-bar-admin.php:663
+#: admin/class-speed-contact-bar-admin.php:680
 msgid "Any Single Page: when any page (not post) is being displayed."
 msgstr ""
 
-#: admin/class-speed-contact-bar-admin.php:662
+#: admin/class-speed-contact-bar-admin.php:679
 msgid ""
 "Any Single Post Page: when a single post of the blog is being displayed."
 msgstr ""
 
-#: admin/class-speed-contact-bar-admin.php:764
+#: admin/class-speed-contact-bar-admin.php:781
 msgid "Appeareance of texts and links"
 msgstr "Внешний текстов и ссылок"
 
-#: admin/class-speed-contact-bar-admin.php:652
+#: admin/class-speed-contact-bar-admin.php:669
 msgid "Appeareance of the contact bar"
 msgstr "Внешний вид панели контактов"
 
-#: admin/class-speed-contact-bar-admin.php:741
+#: admin/class-speed-contact-bar-admin.php:758
 msgid "Appeareance of the headline"
 msgstr "Внешний вид заголовка"
 
-#: admin/class-speed-contact-bar-admin.php:809
+#: admin/class-speed-contact-bar-admin.php:826
 msgid "Appeareance of the icons"
 msgstr "Внешний вид значков"
 
-#: admin/class-speed-contact-bar-admin.php:689
+#: admin/class-speed-contact-bar-admin.php:706
 msgid "at the bottom"
 msgstr "внизу"
 
-#: admin/class-speed-contact-bar-admin.php:689
+#: admin/class-speed-contact-bar-admin.php:706
 msgid "at the top"
 msgstr "На верху"
 
-#: admin/class-speed-contact-bar-admin.php:725
+#: admin/class-speed-contact-bar-admin.php:742
 msgid "Background Color"
 msgstr "Цвет фона"
 
-#: admin/class-speed-contact-bar-admin.php:730
+#: admin/class-speed-contact-bar-admin.php:747
 msgid "Background Color Opacity"
 msgstr "Прозрачность цвета фона"
 
-#: admin/class-speed-contact-bar-admin.php:823
+#: admin/class-speed-contact-bar-admin.php:840
 msgid "bright"
 msgstr "яркий"
 
-#: admin/class-speed-contact-bar-admin.php:500
-#: public/class-speed-contact-bar.php:914
+#: admin/class-speed-contact-bar-admin.php:517
+#: public/class-speed-contact-bar.php:900
 msgid "Cell Phone Number"
 msgstr "Номер мобильного телефона"
 
-#: admin/class-speed-contact-bar-admin.php:506
+#: admin/class-speed-contact-bar-admin.php:523
 msgid "Cell Phone Text"
 msgstr "Текст сотового телефона"
 
-#: admin/class-speed-contact-bar-admin.php:776
+#: admin/class-speed-contact-bar-admin.php:793
 msgid "centered"
 msgstr "центру"
 
-#: public/class-speed-contact-bar.php:461
+#: public/class-speed-contact-bar.php:460
 msgid "Contact to us"
 msgstr "Свяжитесь с нами"
 
-#: public/class-speed-contact-bar.php:993
+#: public/class-speed-contact-bar.php:979
 msgid "Contact via Messenger"
 msgstr "Контакт через Messenger"
 
-#: public/class-speed-contact-bar.php:994
+#: public/class-speed-contact-bar.php:980
 msgid "Contact via Telegram"
 msgstr "Контакт через Telegram"
 
-#: public/class-speed-contact-bar.php:992
+#: public/class-speed-contact-bar.php:978
 msgid "Contact via WhatsApp"
 msgstr "Контакт через ВатсАпп"
 
@@ -194,18 +194,18 @@ msgstr "Контакт через ВатсАпп"
 msgid "Credits and informations"
 msgstr "Кредиты и информация"
 
-#: admin/class-speed-contact-bar-admin.php:823
+#: admin/class-speed-contact-bar-admin.php:840
 msgid "dark"
 msgstr "темный"
 
-#: admin/class-speed-contact-bar-admin.php:803
+#: admin/class-speed-contact-bar-admin.php:820
 msgid ""
 "Do not open the links of the postal address and the headline in new windows"
 msgstr "Не открывать ссылки почтового адреса и заголовка в новых окнах"
 
-#: admin/class-speed-contact-bar-admin.php:906
-#: admin/class-speed-contact-bar-admin.php:918
-#: admin/class-speed-contact-bar-admin.php:951
+#: admin/class-speed-contact-bar-admin.php:923
+#: admin/class-speed-contact-bar-admin.php:935
+#: admin/class-speed-contact-bar-admin.php:968
 msgid "Do not set <code>rel=\"nofollow\"</code> to this link"
 msgstr ""
 
@@ -217,23 +217,23 @@ msgstr "Нравится ли вам плагин?"
 msgid "Do you need support or have an idea for the plugin?"
 msgstr "Вам нужна поддержка или есть идея для плагина?"
 
-#: public/class-speed-contact-bar.php:985
+#: public/class-speed-contact-bar.php:971
 msgid "Email"
 msgstr "Email"
 
-#: admin/class-speed-contact-bar-admin.php:467
+#: admin/class-speed-contact-bar-admin.php:484
 msgid "Email Address"
 msgstr "Адрес электронной почты"
 
-#: admin/class-speed-contact-bar-admin.php:473
+#: admin/class-speed-contact-bar-admin.php:490
 msgid "Email Link Text"
 msgstr "Текст ссылки E-mail адреса"
 
-#: admin/class-speed-contact-bar-admin.php:694
+#: admin/class-speed-contact-bar-admin.php:711
 msgid "Enable fixed position"
 msgstr "Включить фиксированное положение"
 
-#: admin/class-speed-contact-bar-admin.php:731
+#: admin/class-speed-contact-bar-admin.php:748
 msgid ""
 "Enter a number between 0.0 and 1.0 for 0.0 as no opacity (i.e. highest "
 "transparency) and 1.0 for highest opacity (i.e. no transparency)."
@@ -241,15 +241,15 @@ msgstr ""
 "Введите число от 0,0 до 1,0 для 0,0 как непрозрачность (т.е. наивысшая "
 "прозрачность) и 1,0 для наивысшей непрозрачности (т.е. без прозрачности)."
 
-#: admin/class-speed-contact-bar-admin.php:446
+#: admin/class-speed-contact-bar-admin.php:463
 msgid "Enter a short headline for the contact bar"
 msgstr "Введите короткий заголовок для панели контактов"
 
-#: admin/class-speed-contact-bar-admin.php:457
+#: admin/class-speed-contact-bar-admin.php:474
 msgid "Enter a short postal address for the contact bar"
 msgstr "Введите короткий почтовый адрес для контактной панели"
 
-#: admin/class-speed-contact-bar-admin.php:507
+#: admin/class-speed-contact-bar-admin.php:524
 msgid ""
 "Enter a text for the cell phone link, otherwise the cell phone number will "
 "be displayed."
@@ -257,7 +257,7 @@ msgstr ""
 "Введите текст для сотового телефона ссылку, в противном случае номер "
 "сотового телефона будет отображаться."
 
-#: admin/class-speed-contact-bar-admin.php:474
+#: admin/class-speed-contact-bar-admin.php:491
 msgid ""
 "Enter a text for the email link, otherwise the email address will be "
 "displayed."
@@ -265,14 +265,14 @@ msgstr ""
 "Введите текст для ссылки электронной почты, в противном случае будет "
 "отображаться адрес электронной почты."
 
-#: admin/class-speed-contact-bar-admin.php:496
+#: admin/class-speed-contact-bar-admin.php:513
 msgid ""
 "Enter a text for the fax link, otherwise the fax number will be displayed."
 msgstr ""
 "Введите текст для ссылки факса, в противном случае будет отображаться номер "
 "факса."
 
-#: admin/class-speed-contact-bar-admin.php:529
+#: admin/class-speed-contact-bar-admin.php:546
 #, php-format
 msgid ""
 "Enter a text for the Messenger link if desired. Mind the guidelines at %s."
@@ -280,7 +280,7 @@ msgstr ""
 "При желании введите текст для ссылки Messenger. Соблюдайте руководящие "
 "принципы в %s."
 
-#: admin/class-speed-contact-bar-admin.php:485
+#: admin/class-speed-contact-bar-admin.php:502
 msgid ""
 "Enter a text for the phone link, otherwise the phone number will be "
 "displayed."
@@ -288,18 +288,18 @@ msgstr ""
 "Введите текст для телефонной ссылки, в противном случае будет отображаться "
 "номер телефона."
 
-#: admin/class-speed-contact-bar-admin.php:551
+#: admin/class-speed-contact-bar-admin.php:568
 msgid ""
 "Enter a text for the SMS link, otherwise the SMS number will be displayed."
 msgstr ""
 "Введите текст для SMS-ссылки, в противном случае будет отображаться номер "
 "SMS."
 
-#: admin/class-speed-contact-bar-admin.php:540
+#: admin/class-speed-contact-bar-admin.php:557
 msgid "Enter a text for the Telegram link if desired."
 msgstr "При желании введите текст для ссылки Telegram."
 
-#: admin/class-speed-contact-bar-admin.php:518
+#: admin/class-speed-contact-bar-admin.php:535
 #, php-format
 msgid ""
 "Enter a text for the WhatsApp link if desired. Mind the guidelines at %s."
@@ -307,7 +307,7 @@ msgstr ""
 "При желании введите текст для ссылки ВатсАпп. Соблюдайте руководящие "
 "принципы в %s."
 
-#: admin/class-speed-contact-bar-admin.php:468
+#: admin/class-speed-contact-bar-admin.php:485
 msgid ""
 "Enter a valid email address. If the email address is invalid it will not be "
 "used."
@@ -315,13 +315,13 @@ msgstr ""
 "Введите действующий адрес электронной почты. Если адрес электронной почты "
 "недействителен, он не будет использоваться."
 
-#: admin/class-speed-contact-bar-admin.php:435
+#: admin/class-speed-contact-bar-admin.php:452
 msgid "Enter a valid URL. If the URL is invalid it will not be used."
 msgstr ""
 "Введите допустимый URL-адрес. Если URL-адрес является недопустимым, он не "
 "будет использоваться."
 
-#: admin/class-speed-contact-bar-admin.php:451
+#: admin/class-speed-contact-bar-admin.php:468
 msgid ""
 "Enter a web address and the headline becomes a link. The address must start "
 "with http:// or https://"
@@ -329,7 +329,7 @@ msgstr ""
 "Введите веб-адрес и заголовок становет ссылкой. Адрес должен начинаться с "
 "http://или https://"
 
-#: admin/class-speed-contact-bar-admin.php:462
+#: admin/class-speed-contact-bar-admin.php:479
 msgid ""
 "Enter a web address and the postal address becomes a link. The web address "
 "must start with http:// or https://"
@@ -337,7 +337,7 @@ msgstr ""
 "Введите веб-адрес и заголовок становет ссылкой. Адрес должен начинаться с "
 "http://или https://"
 
-#: admin/class-speed-contact-bar-admin.php:512
+#: admin/class-speed-contact-bar-admin.php:529
 msgid ""
 "Enter your full telephone number in international format, e.g. 493012345678 "
 "with 49 for Germany."
@@ -345,7 +345,7 @@ msgstr ""
 "Введите полный номер телефона в международном формате, например 493012345678 "
 "с 49 для Германии."
 
-#: admin/class-speed-contact-bar-admin.php:501
+#: admin/class-speed-contact-bar-admin.php:518
 msgid ""
 "Enter your official contact cell phone number, including the international "
 "dialing prefix of your country."
@@ -353,7 +353,7 @@ msgstr ""
 "Введите свой официальный контактный номер сотового телефона, включая "
 "Международный префикс вашей страны."
 
-#: admin/class-speed-contact-bar-admin.php:490
+#: admin/class-speed-contact-bar-admin.php:507
 msgid ""
 "Enter your official contact fax number, including the international dialing "
 "prefix of your country."
@@ -361,7 +361,7 @@ msgstr ""
 "Введите свой официальный контактный номер факса, включая Международный "
 "префикс вашей страны."
 
-#: admin/class-speed-contact-bar-admin.php:479
+#: admin/class-speed-contact-bar-admin.php:496
 msgid ""
 "Enter your official contact phone number. Since web pages can be accessed "
 "worldwide the phone number should include the international dialing prefix "
@@ -373,7 +373,7 @@ msgstr ""
 "международный набор префикс вашей страны, как + 49 для Германии, делая номер "
 "полезной из любого места."
 
-#: admin/class-speed-contact-bar-admin.php:545
+#: admin/class-speed-contact-bar-admin.php:562
 msgid ""
 "Enter your official contact SMS number, including the international dialing "
 "prefix of your country."
@@ -381,42 +381,42 @@ msgstr ""
 "Введите свой официальный контактный номер SMS, включая Международный префикс "
 "вашей страны."
 
-#: admin/class-speed-contact-bar-admin.php:592
+#: admin/class-speed-contact-bar-admin.php:609
 msgid "Enter your Skype username, not your email address or phone number."
 msgstr ""
 "Введите имя пользователя Skype, а не адрес электронной почты или номер "
 "телефона."
 
-#: admin/class-speed-contact-bar-admin.php:434
+#: admin/class-speed-contact-bar-admin.php:451
 msgid "Example"
 msgstr "Пример"
 
-#: admin/class-speed-contact-bar-admin.php:489
-#: public/class-speed-contact-bar.php:913
+#: admin/class-speed-contact-bar-admin.php:506
+#: public/class-speed-contact-bar.php:899
 msgid "Fax Number"
 msgstr "Номер факса"
 
-#: admin/class-speed-contact-bar-admin.php:495
+#: admin/class-speed-contact-bar-admin.php:512
 msgid "Fax Text"
 msgstr "Текст факса"
 
-#: admin/class-speed-contact-bar-admin.php:781
+#: admin/class-speed-contact-bar-admin.php:798
 msgid "Font Size"
 msgstr "Размер шрифта"
 
-#: admin/class-speed-contact-bar-admin.php:445
+#: admin/class-speed-contact-bar-admin.php:462
 msgid "Headline"
 msgstr "Заголовок"
 
-#: admin/class-speed-contact-bar-admin.php:756
+#: admin/class-speed-contact-bar-admin.php:773
 msgid "Headline HTML Tag"
 msgstr "Заголовок HTML-тегов"
 
-#: admin/class-speed-contact-bar-admin.php:699
+#: admin/class-speed-contact-bar-admin.php:716
 msgid "Height readjustment for fixed position"
 msgstr "Регулировка высоты для фиксированного положения"
 
-#: admin/class-speed-contact-bar-admin.php:713
+#: admin/class-speed-contact-bar-admin.php:730
 msgid "Horizontal Padding"
 msgstr "Горизонтальный отступ"
 
@@ -434,15 +434,15 @@ msgstr ""
 "utm_source=wordpress_org&utm_medium=plugin&utm_campaign=speed-contact-"
 "bar&utm_content=author"
 
-#: admin/class-speed-contact-bar-admin.php:821
+#: admin/class-speed-contact-bar-admin.php:838
 msgid "Icon Brightness"
 msgstr "Яркость значка"
 
-#: admin/class-speed-contact-bar-admin.php:814
+#: admin/class-speed-contact-bar-admin.php:831
 msgid "Icon Size"
 msgstr "Размер иконки"
 
-#: admin/class-speed-contact-bar-admin.php:751
+#: admin/class-speed-contact-bar-admin.php:768
 msgid "Keep headline in mobile devices"
 msgstr "Сохранять заголовок в мобильных устройствах"
 
@@ -450,7 +450,7 @@ msgstr "Сохранять заголовок в мобильных устрой
 msgid "Kybernetik Services"
 msgstr "Kybernetik Services"
 
-#: admin/class-speed-contact-bar-admin.php:776
+#: admin/class-speed-contact-bar-admin.php:793
 msgid "left-aligned"
 msgstr "Выравнивание по левому краю"
 
@@ -460,45 +460,45 @@ msgid ""
 "contact information"
 msgstr ""
 
-#: admin/class-speed-contact-bar-admin.php:793
+#: admin/class-speed-contact-bar-admin.php:810
 msgid "Link Color"
 msgstr "Цвет ссылки"
 
-#: admin/class-speed-contact-bar-admin.php:673
-msgid "Maximal viewport width to hide the bar"
-msgstr "Максимальная ширина видового экрана, чтобы скрыть панель"
+#: admin/class-speed-contact-bar-admin.php:690
+msgid "Maximum viewport width up to which the bar will be hidden"
+msgstr ""
 
-#: admin/class-speed-contact-bar-admin.php:528
+#: admin/class-speed-contact-bar-admin.php:545
 msgid "Messenger Text"
 msgstr "Текст Messenger"
 
-#: admin/class-speed-contact-bar-admin.php:680
+#: admin/class-speed-contact-bar-admin.php:697
 msgid "Minimal viewport width to hide the bar"
 msgstr "Минимальная ширина ширины обзора, чтобы скрыть бар"
 
-#: admin/class-speed-contact-bar-admin.php:675
-#: admin/class-speed-contact-bar-admin.php:682
+#: admin/class-speed-contact-bar-admin.php:692
+#: admin/class-speed-contact-bar-admin.php:699
 msgid "never hide"
 msgstr "Никогда не скрывать"
 
-#: admin/class-speed-contact-bar-admin.php:798
+#: admin/class-speed-contact-bar-admin.php:815
 msgid "Open links in new windows"
 msgstr "Открытие ссылок в новых окнах"
 
-#: admin/class-speed-contact-bar-admin.php:657
+#: admin/class-speed-contact-bar-admin.php:674
 msgid "Page types where to hide the bar"
 msgstr "Типы страниц, на которых можно спрятать панель"
 
-#: admin/class-speed-contact-bar-admin.php:478
-#: public/class-speed-contact-bar.php:912
+#: admin/class-speed-contact-bar-admin.php:495
+#: public/class-speed-contact-bar.php:898
 msgid "Phone Number"
 msgstr "Номер телефона"
 
-#: admin/class-speed-contact-bar-admin.php:484
+#: admin/class-speed-contact-bar-admin.php:501
 msgid "Phone Text"
 msgstr "Текст телефона"
 
-#: admin/class-speed-contact-bar-admin.php:687
+#: admin/class-speed-contact-bar-admin.php:704
 msgid "Position of the bar"
 msgstr "Положение бара"
 
@@ -506,9 +506,9 @@ msgstr "Положение бара"
 msgid "Post your questions and ideas in the forum at wordpress.org!"
 msgstr "Расскажите свои вопросы и идеи на форуме на wordpress.org!"
 
-#: admin/class-speed-contact-bar-admin.php:456
-#: public/class-speed-contact-bar.php:894
-#: public/class-speed-contact-bar.php:904
+#: admin/class-speed-contact-bar-admin.php:473
+#: public/class-speed-contact-bar.php:880
+#: public/class-speed-contact-bar.php:890
 msgid "Postal address"
 msgstr "Почтовый адрес"
 
@@ -516,7 +516,7 @@ msgstr "Почтовый адрес"
 msgid "Rate it at wordpress.org!"
 msgstr "Оцените его в WordPress.org!"
 
-#: admin/class-speed-contact-bar-admin.php:700
+#: admin/class-speed-contact-bar-admin.php:717
 msgid ""
 "Readjust the space between the bar and the page content (not in mobile "
 "design)"
@@ -524,45 +524,43 @@ msgstr ""
 "Переустановите пространство между панелью и содержимым страницы (не в "
 "мобильном дизайне)"
 
-#: admin/class-speed-contact-bar-admin.php:776
+#: admin/class-speed-contact-bar-admin.php:793
 msgid "right-aligned"
 msgstr "Справа"
 
-#: admin/class-speed-contact-bar-admin.php:775
+#: admin/class-speed-contact-bar-admin.php:792
 msgid "Select the alignment of the content within the bar"
 msgstr "Выберите выравнивание содержимого внутри панели"
 
-#: admin/class-speed-contact-bar-admin.php:726
+#: admin/class-speed-contact-bar-admin.php:743
 msgid "Select the background color"
 msgstr "Выберите цвет фона"
 
-#: admin/class-speed-contact-bar-admin.php:822
+#: admin/class-speed-contact-bar-admin.php:839
 msgid "Select the brightness of the icons"
 msgstr "Выберите яркость значков"
 
-#: admin/class-speed-contact-bar-admin.php:782
+#: admin/class-speed-contact-bar-admin.php:799
 msgid "Select the font size of the texts and links"
 msgstr "Выберите размер шрифта текстов и ссылок"
 
-#: admin/class-speed-contact-bar-admin.php:757
+#: admin/class-speed-contact-bar-admin.php:774
 msgid ""
 "Select the HTML element for the headline without changing the headline style"
 msgstr "Выберите элемент HTML для заголовка без изменения стиля заголовка"
 
-#: admin/class-speed-contact-bar-admin.php:794
+#: admin/class-speed-contact-bar-admin.php:811
 msgid "Select the link color"
 msgstr "Выберите цвет ссылки"
 
-#: admin/class-speed-contact-bar-admin.php:674
+#: admin/class-speed-contact-bar-admin.php:691
 msgid ""
-"Select the maximal viewport width for hiding the bar. Rule of thumb: 480px "
-"and below = hide in smartphones; 1024px and below = probably tablets."
+"Select the maximum width of the viewport up to which the bar will be hidden. "
+"Rule of thumb: 480px and below = hide in smartphones; 1024px and below = "
+"probably tablets."
 msgstr ""
-"Выберите максимальную ширину ширины viewport для сокрытия бара. Правило "
-"большого пальца: 480px и ниже - скрыть в смартфонах; 1024px и ниже , "
-"вероятно, таблетки."
 
-#: admin/class-speed-contact-bar-admin.php:681
+#: admin/class-speed-contact-bar-admin.php:698
 msgid ""
 "Select the minimal viewport width for hiding the bar. Rule of thumb: 480px "
 "and above = show only in smartphones; 1024px and above = hide in desktops."
@@ -571,75 +569,75 @@ msgstr ""
 "большого пальца: 480px и выше - показывают только в смартфонах; 1024px и "
 "выше - прячутся в настольных компьютерах."
 
-#: admin/class-speed-contact-bar-admin.php:688
+#: admin/class-speed-contact-bar-admin.php:705
 msgid "Select the position of the bar on every page"
 msgstr "Выбор положения бара на каждой странице"
 
-#: admin/class-speed-contact-bar-admin.php:815
+#: admin/class-speed-contact-bar-admin.php:832
 msgid "Select the size of the icons"
 msgstr "Выбрать размер значков"
 
-#: admin/class-speed-contact-bar-admin.php:714
+#: admin/class-speed-contact-bar-admin.php:731
 msgid "Select the space between content and left and right border of the bar"
 msgstr "Выберите расстояние между содержимым и левой и правой границами панели"
 
-#: admin/class-speed-contact-bar-admin.php:707
+#: admin/class-speed-contact-bar-admin.php:724
 msgid "Select the space between content and upper and lower border of the bar"
 msgstr "Выбор промежутка между содержимым и верхней и нижней границами бара"
 
-#: admin/class-speed-contact-bar-admin.php:789
+#: admin/class-speed-contact-bar-admin.php:806
 msgid "Select the text color"
 msgstr "Выберите цвет текста"
 
-#: admin/class-speed-contact-bar-admin.php:658
+#: admin/class-speed-contact-bar-admin.php:675
 msgid "Select the type of page to hide the bar on those pages."
 msgstr "Выберите тип страницы, чтобы скрыть строку на этих страницах."
 
-#: admin/class-speed-contact-bar-admin.php:441
+#: admin/class-speed-contact-bar-admin.php:458
 msgid ""
 "Set the contact information. To suppress displaying a field leave it empty."
 msgstr ""
 "Задайте контактную информацию. Чтобы скрыть отображение поля, оставьте его "
 "пустым."
 
-#: admin/class-speed-contact-bar-admin.php:653
+#: admin/class-speed-contact-bar-admin.php:670
 msgid "Set the graphical properties of the contact bar."
 msgstr "Задайте графические свойства панели контактов."
 
-#: admin/class-speed-contact-bar-admin.php:742
+#: admin/class-speed-contact-bar-admin.php:759
 msgid "Set the graphical properties of the headline."
 msgstr "Задайте графические свойства заголовка."
 
-#: admin/class-speed-contact-bar-admin.php:810
+#: admin/class-speed-contact-bar-admin.php:827
 msgid "Set the graphical properties of the icons in the contact bar."
 msgstr "Установите графические свойства значков в панели контактов."
 
-#: admin/class-speed-contact-bar-admin.php:765
+#: admin/class-speed-contact-bar-admin.php:782
 msgid "Set the graphical properties of the texts and links in the contact bar."
 msgstr "Установите графические свойства текстов и ссылок в панели контактов."
 
-#: admin/class-speed-contact-bar-admin.php:746
+#: admin/class-speed-contact-bar-admin.php:763
 msgid "Show headline"
 msgstr "Показать заголовок"
 
-#: admin/class-speed-contact-bar-admin.php:735
+#: admin/class-speed-contact-bar-admin.php:752
 msgid "Show shadow"
 msgstr "Показать тень"
 
-#: admin/class-speed-contact-bar-admin.php:769
+#: admin/class-speed-contact-bar-admin.php:786
 msgid "Show texts on small displays"
 msgstr "Показать тексты на небольших дисплеях"
 
-#: admin/class-speed-contact-bar-admin.php:695
+#: admin/class-speed-contact-bar-admin.php:712
 msgid "Show the bar always visible"
 msgstr "Всегда показывать панель"
 
-#: admin/class-speed-contact-bar-admin.php:544
-#: public/class-speed-contact-bar.php:915
+#: admin/class-speed-contact-bar-admin.php:561
+#: public/class-speed-contact-bar.php:901
 msgid "SMS Number"
 msgstr "Номер SMS"
 
-#: admin/class-speed-contact-bar-admin.php:550
+#: admin/class-speed-contact-bar-admin.php:567
 msgid "SMS Text"
 msgstr "Текст смс-сообщення"
 
@@ -647,25 +645,25 @@ msgstr "Текст смс-сообщення"
 msgid "Speed Contact Bar"
 msgstr "Speed Contact Bar"
 
-#: admin/class-speed-contact-bar-admin.php:539
+#: admin/class-speed-contact-bar-admin.php:556
 msgid "Telegram Text"
 msgstr "Текст Telegram"
 
-#: admin/class-speed-contact-bar-admin.php:774
+#: admin/class-speed-contact-bar-admin.php:791
 msgid "Text Alignment"
 msgstr "Выравнивание текста"
 
-#: admin/class-speed-contact-bar-admin.php:788
+#: admin/class-speed-contact-bar-admin.php:805
 msgid "Text Color"
 msgstr "Цвет текста"
 
-#: admin/class-speed-contact-bar-admin.php:660
+#: admin/class-speed-contact-bar-admin.php:677
 msgid ""
 "The Front Page: when the front page of the site is displayed, regardless of "
 "whether it is set to show posts or a static page."
 msgstr ""
 
-#: public/class-speed-contact-bar.php:584
+#: public/class-speed-contact-bar.php:581
 #, php-format
 msgid ""
 "The plugin requires WordPress version %s or higher. Therefore, WordPress did "
@@ -676,44 +674,48 @@ msgstr ""
 "активировал его. Если вы хотите использовать этот плагин, обновите файлы "
 "WordPress до последней версии."
 
-#: admin/class-speed-contact-bar-admin.php:720
+#: admin/class-speed-contact-bar-admin.php:737
 msgid "Transparent background"
 msgstr "Прозрачный фон"
 
-#: admin/class-speed-contact-bar-admin.php:450
+#: admin/class-speed-contact-bar-admin.php:467
 msgid "URL of the headline"
 msgstr "URL-адрес заголовка"
 
-#: admin/class-speed-contact-bar-admin.php:461
+#: admin/class-speed-contact-bar-admin.php:478
 msgid "URL of the postal address"
 msgstr "URL-адрес почтового адреса"
 
-#: admin/class-speed-contact-bar-admin.php:706
+#: admin/class-speed-contact-bar-admin.php:723
 msgid "Vertical Padding"
 msgstr "Вертикальный отступ"
 
-#: public/class-speed-contact-bar.php:1435
+#: public/class-speed-contact-bar.php:1427
 #, php-format
 msgid "Welcome to the plugin %s! You can configure it at %s."
 msgstr "Добро пожаловать в плагин %s! Его можно настроить в %s."
 
-#: admin/class-speed-contact-bar-admin.php:511
+#: admin/class-speed-contact-bar-admin.php:528
 msgid "WhatsApp Phone Number"
 msgstr "ВатсАпп номер телефона"
 
-#: admin/class-speed-contact-bar-admin.php:517
+#: admin/class-speed-contact-bar-admin.php:534
 msgid "WhatsApp Text"
 msgstr "Текст ВатсАпп"
 
-#: admin/class-speed-contact-bar-admin.php:440
+#: admin/class-speed-contact-bar-admin.php:638
+msgid "X (former Twitter)"
+msgstr ""
+
+#: admin/class-speed-contact-bar-admin.php:457
 msgid "Your Contact Data"
 msgstr "Ваши контактные данные"
 
-#: admin/class-speed-contact-bar-admin.php:591
+#: admin/class-speed-contact-bar-admin.php:608
 msgid "Your Skype name"
 msgstr "Ваше имя в Skype"
 
-#: admin/class-speed-contact-bar-admin.php:436
+#: admin/class-speed-contact-bar-admin.php:453
 #, php-format
 msgid "Your URL on %s"
 msgstr "Ваш URL-адрес на %s"

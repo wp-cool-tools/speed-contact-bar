@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/donate?hosted_button_id=NSEQX73VHXKS8
 Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb, instagram, linkedin, phone, pinterest, position, responsive, skype, slideshare, snapchat, social media, soundcloud, telegram, tumblr, twitter, X, vimeo, xing, yelp, youtube
 Requires at least: 3.5
 Requires PHP: 5.2
-Tested up to: 6.3
+Tested up to: 6.5
 Stable tag: 6.12.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -335,6 +335,11 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 2. The settings page of Speed Contact Bar in the backend
 
 == Changelog ==
+
+= 6.12.2 =
+* improved text
+* updated language files
+* Successfully tested with WP 6.5
 
 = 6.12.1.1 =
 * hotfix white screen
