@@ -338,7 +338,6 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 
 = 6.12.2 =
 * improved text
-* updated language files
 * Successfully tested with WP 6.5
 
 = 6.12.1.1 =
