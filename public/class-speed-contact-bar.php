@@ -358,8 +358,6 @@ class Speed_Contact_Bar {
 		);
 		// PNG image file names with aspect ratios (width / height)
 		$this->alt_aspect_ratios = array( 
-			'imdb'			=> 2.115, 
-			'yelp'			=> 1.888,
 			'soundcloud'	=> 1.0,
 			'snap'			=> 1.0,
 		);

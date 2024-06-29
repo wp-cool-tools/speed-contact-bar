@@ -282,7 +282,7 @@ class Speed_Contact_Bar_Admin {
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
 			$root_url = plugin_dir_url( dirname( __FILE__ ) );
-			$pngs = array( 'imdb', 'yelp', 'soundcloud', 'snap' ); // PNG image file namens
+			$pngs = array( 'soundcloud', 'snap' ); // PNG image file namens
 			echo '<style type="text/css">';
 			print "\n";
 			$background_size = '40px 40px';
@@ -300,24 +300,13 @@ class Speed_Contact_Bar_Admin {
 			}
 			foreach ( $this->social_networks as $name ) {
 				if ( in_array( $name, $pngs ) ) {
-					switch ( $name ) {
-						case 'imdb':
-							$logo_size = '85px 40px';
-							break;
-						case 'yelp':
-							$logo_size = '76px 40px';
-							break;
-						default:
-							$logo_size = $background_size;
-					}
-
 					printf(
 						".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s.png') no-repeat scroll 0 %s transparent; background-size: %s; }",
 						$name,
 						$root_url,
 						$name,
 						$background_position,
-						$logo_size
+                        $background_size
 					);
 				} else {
 

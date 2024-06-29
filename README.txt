@@ -4,16 +4,16 @@ Donate link: https://www.paypal.com/donate?hosted_button_id=NSEQX73VHXKS8
 Tags: address, cell phone, contact, email, facebook, fax, flickr, whatsapp, imdb, instagram, linkedin, phone, pinterest, position, responsive, skype, slideshare, snapchat, social media, soundcloud, telegram, tumblr, twitter, X, vimeo, xing, yelp, youtube
 Requires at least: 3.5
 Requires PHP: 5.2
-Tested up to: 6.3
-Stable tag: 6.12.1.1
+Tested up to: 6.6
+Stable tag: 6.13.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Let your website visitors get in touch with you easily with permanent visible contact informations.
+Let your website visitors get in touch with you easily with permanent visible contact information.
 
 == Description ==
 
-Let your website visitors get in touch with you easily with permanent visible contact informations.
+Let your website visitors get in touch with you easily with permanent visible contact information.
 
 The plugin is available in English, Spanish (Español), Russian (ру́сский), German (Deutsch) and Polish (Polski). You can add further translations with WPML.
 
@@ -57,7 +57,7 @@ There are some options you can set to let the contact bar fit to your needs. You
 You can show these three **personal contact data**:
 
 1. **Headline**, can be a **link** with an optional URL
-2. **Postal address**, can be a **link** with an optional URL
+2. **Postal address** can be a **link** with an optional URL
 3. **Phone number**, automatically **linked** to open an available phone application, can be displayed **with a text of your choice**
 4. **Fax number**, automatically **linked** to open an available phone application, can be displayed **with a text of your choice**
 5. **Cell phone number**, automatically **linked** to open an available phone application, can be displayed **with a text of your choice**. Thanks to Jim Colao for the icons!
@@ -335,6 +335,11 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 2. The settings page of Speed Contact Bar in the backend
 
 == Changelog ==
+
+= 6.13.0 =
+* fixed wrong ration with IMDb logo and replaced png with SVG
+* fixed wrong ration with Yelp logo and replaced png with SVG
+* tested with WordPress 6.6
 
 = 6.12.1.1 =
 * hotfix white screen
