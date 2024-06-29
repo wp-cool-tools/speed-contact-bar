@@ -669,8 +669,8 @@ class Speed_Contact_Bar_Admin {
 					),
 					'max_viewport_width' => array(
 						'type'    => 'selection',
-						'title'   => esc_html__( 'Maximal viewport width to hide the bar', 'speed-contact-bar' ),
-						'desc'    => esc_html__( 'Select the maximal viewport width for hiding the bar. Rule of thumb: 480px and below = hide in smartphones; 1024px and below = probably tablets.', 'speed-contact-bar' ),
+						'title'   => esc_html__( 'Maximum viewport width up to which the bar will be hidden', 'speed-contact-bar' ),
+						'desc'    => esc_html__( 'Select the maximum width of the viewport up to which the bar will be hidden. Rule of thumb: 480px and below = hide in smartphones; 1024px and below = probably tablets.', 'speed-contact-bar' ),
 						'values'  => array( 'never' => esc_html__( 'never hide', 'speed-contact-bar' ), '320px' => esc_html__( '320px', 'speed-contact-bar' ), '480px' => esc_html__( '480px', 'speed-contact-bar' ), '640px' => esc_html__( '640px', 'speed-contact-bar' ), '768px' => esc_html__( '768px', 'speed-contact-bar' ), '1024px' => esc_html__( '1024px', 'speed-contact-bar' ) ),
 						'default' => 'top',
 					),
