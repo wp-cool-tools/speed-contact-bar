@@ -353,7 +353,7 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 = 6.12.0 =
 * fixed no link on X logo anymore
 * fixed where "nofollow" was sometimes set incorrectly
-* we get now plugin’s translation from wp.org
+* we now get plugin’s translation from wp.org
 
 = 6.11.0 =
 * renaming Twitter to X (new logo and adjusted wording) (maintain backward compatibility with current Twitter settings)
@@ -587,7 +587,7 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 * Added Position option: place the bar at the top or at the bottom on every page
 * Added Headline URL option: The headline can become a link with a given URL
 * Added donation button to make it easier for you to contribute the plugin
-* Moved some headline options to the 'Appereance' section
+* Moved some headline options to the 'Appearance' section
 * Cleared up options page: More structure and new order of the options
 * Updated screenshot of the Settings page
 * Updated *.pot file and german translation
@@ -718,7 +718,7 @@ Added Messenger option, successfully tested with WP 5.6
 Added Telegram option, successfully tested with WP 5.5.3
 
 = 6.7.2 =
-Fixed wrong sanitazion of checkbox groups, tested with WP 5.5
+Fixed wrong sanitation of checkbox groups, tested with WP 5.5
 
 = 6.7.1 =
 Fixed undesired HTML output at the WhatsApp icon
@@ -829,7 +829,7 @@ Added SoundCloud option, graphical improvements in the options page
 Added option to hide bar in mobile devices, fixed icon size for some themes, tested with WP 4.2.4
 
 = 4.0 =
-Introduced hooks, augmented ranges for padding and readjusment
+Introduced hooks, augmented ranges for padding and readjustment
 
 = 3.0.1 =
 Fixed font size of links, refactoring
@@ -850,7 +850,7 @@ Added Yelp option, tested successfully with WP 4.2
 Added option for a transparent bar
 
 = 2.3 =
-Added option to keep phone numbers and mailaddress displayed in small screens
+Added option to keep phone numbers and mail address displayed in small screens
 
 = 2.2 =
 Added Instagram option, tested with WP 4.1.1

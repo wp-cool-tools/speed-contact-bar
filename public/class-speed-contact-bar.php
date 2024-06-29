@@ -275,7 +275,7 @@ class Speed_Contact_Bar {
 	 */
 	private function __construct() {
 
-		// Load plugin text domain
+		// Load general settings
 		add_action( 'init', array( $this, 'apply_stored_settings' ) );
 
 		// Activate plugin when new blog is added
