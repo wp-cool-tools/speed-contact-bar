@@ -161,9 +161,9 @@ Your language is missing? Please be part of the community and help to translate 
 
 = Could there be any conflicts with my theme? =
 
-In most themes the Speed Contact Bar works fine without any conflicts. Only if the theme comes with an own fixed top bar there can be a source of design conflicts with a fixed Speed Contact Bar.
+In most themes, the Speed Contact Bar works fine without any conflicts. Only if the theme comes with an own fixed top bar there can be a source of design conflicts with a fixed Speed Contact Bar.
 
-In that case you can try to set the position of the Speed Contact Bar at the bottom of every page. That will avoid the conflict.
+In that case, you can try to set the position of the Speed Contact Bar at the bottom of every page. That will avoid the conflict.
 
 = What does the plugin need to work fine? =
 
