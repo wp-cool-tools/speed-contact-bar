@@ -315,7 +315,7 @@ The reason of the broken icons is a misconfiguration of your server. It sends th
 Your web server needs an extra line in the configuration file:
 `AddType image/svg+xml svg`
 
-For Apache servers the configuration file is called ‘.htaccess’.
+For Apache servers, the configuration file is called ‘.htaccess’.
 
 = I want to switch off the contact bar for a while without losing all settings. How? =
 
@@ -337,6 +337,7 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 == Changelog ==
 
 = 6.13.0 =
+* new WeChat
 * fixed wrong ration with IMDb logo and replaced png with SVG
 * fixed wrong ration with Yelp logo and replaced png with SVG
 * tested with WordPress 6.6

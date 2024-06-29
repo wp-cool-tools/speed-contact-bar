@@ -336,7 +336,7 @@ class Speed_Contact_Bar_Admin {
 				}
 				print "\n";
 			}
-			foreach ( array( 'whatsapp', 'messenger', 'telegram' ) as $name ) {
+			foreach ( array( 'whatsapp', 'messenger', 'telegram', 'wechat' ) as $name ) {
 				switch ( $name ) {
 					case 'whatsapp':
 						$file_name = $name . '.png';
@@ -523,6 +523,17 @@ class Speed_Contact_Bar_Admin {
 						'title'   => esc_html__( 'WhatsApp Text', 'speed-contact-bar' ),
 						'desc'    => sprintf( esc_html__( 'Enter a text for the WhatsApp link if desired. Mind the guidelines at %s.', 'speed-contact-bar' ), '<a href="https://whatsappbrand.com/">WhatsApp Brand Resources</a>' ),
 					),
+                    'wechat' => array(
+                        'type'    => 'textfield',
+                        'title'   => esc_html__( 'WeChat ID', 'speed-contact-bar' ),
+                        'desc'    => esc_html__( 'Enter your WeChat ID.', 'speed-contact-bar' ),
+                        'set_nofollow' => true
+                    ),
+                    'wechat_text' => array(
+                        'type'    => 'textfield',
+                        'title'   => esc_html__( 'WeChat Text', 'speed-contact-bar' ),
+                        'desc'    => esc_html__( 'Enter a text for the WeChat link if desired.', 'speed-contact-bar' )
+                    ),
 					'messenger' => array(
 						'type'    => 'url',
 						'title'   => sprintf( $label_url, 'Messenger' ),
