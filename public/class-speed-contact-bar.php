@@ -322,6 +322,8 @@ class Speed_Contact_Bar {
 			'cellphone_text'		=> '',
 			'whatsapp'				=> '',
 			'whatsapp_text'			=> '',
+            'wechat'				=> '',
+            'wechat_text'			=> '',
 			'messenger'				=> '',
 			'messenger_text'		=> '',
 			'telegram'				=> '',
@@ -355,11 +357,6 @@ class Speed_Contact_Bar {
 			'show_texts'			=> 0,
 			'text_color'			=> '#333333',
 			'vertical_padding'		=> 15,
-		);
-		// PNG image file names with aspect ratios (width / height)
-		$this->alt_aspect_ratios = array( 
-			'soundcloud'	=> 1.0,
-			'snap'			=> 1.0,
 		);
 
 		// hook on displaying a message after plugin activation
@@ -974,6 +971,7 @@ class Speed_Contact_Bar {
 		// the chat clients
 		$devices = array( 
 			'whatsapp'  => __( 'Contact via WhatsApp', 'speed-contact-bar' ),
+            'wechat'    => __( 'Contact via WeChat', 'speed-contact-bar' ),
 			'messenger' => __( 'Contact via Messenger', 'speed-contact-bar' ),
 			'telegram'  => __( 'Contact via Telegram', 'speed-contact-bar' ),
 		);
@@ -999,20 +997,26 @@ class Speed_Contact_Bar {
 						// remove leading zeros
 						$link_href = preg_replace( '/^0+/', '', $link_href );
 						// build the link
-						$link_href = 'https://wa.me/' . $link_href;
-						// build the file name
-						$file_name = $device . '.png';
+						$link_href = esc_url( 'https://wa.me/' . $link_href );
 						break;
+                    case 'wechat':
+                        // remove leading spaces
+                        $link_href = trim( $this->stored_settings[ $device ] );
+                        // build the link
+                        $link_href = 'weixin://dl/chat?' . $link_href;
+                        break;
 					default:
-						$link_href = $this->stored_settings[ $device ];
-						$file_name = $device . '.svg';
+						$link_href = esc_url( $this->stored_settings[ $device ] );
 				}
-				// build the link code
-				$contact_list[] = sprintf(
+
+                // build the filename
+                $file_name = $device . '.svg';
+
+                $contact_list[] = sprintf(
 					'<li class="scb-%s"><a%s href="%s"%s><img src="%sassets/images/%s" width="%d" height="%d" alt="%s" />%s</a></li>',
 					$device,
                     $nofollow,
-                    esc_url( $link_href ),
+                    $link_href,
 					$this->link_target,
 					$this->plugin_root_url,
 					$file_name,
@@ -1048,27 +1052,8 @@ class Speed_Contact_Bar {
 		// build the list
 		foreach ( $this->valid_social_networks as $icon ) {
 
-            if ( in_array( $icon, array_keys( $this->alt_aspect_ratios ) ) and isset( $this->stored_settings[ $icon ] ) and '' != $this->stored_settings[ $icon ] ) {
-
-                $nofollow = '';
-                if ( !isset( $this->stored_settings[ $icon . '_nofollow' ] ) ) {
-                    $nofollow = ' rel="nofollow"';
-                }
-
-                $icons_list[] = sprintf(
-					'<li class="scb-%s"><a%s href="%s"%s><img src="%sassets/images/%s.png" width="%d" height="%d" alt="%s" /></a></li>',
-					$icon,
-                    $nofollow,
-					esc_url( $this->stored_settings[ $icon ] ),
-					$this->link_target,
-					$this->plugin_root_url,
-					$icon,
-					intval( round( $this->alt_aspect_ratios[ $icon ] * $this->current_icon_size ) ),
-					$this->current_icon_size,
-					ucfirst( $icon ) 
-				);
-			} elseif ( 'skype' == $icon ) {
-				if ( isset( $this->stored_settings[ $icon ] ) and '' != $this->stored_settings[ $icon ] ) {
+            if ( 'skype' == $icon ) {
+                if ( isset( $this->stored_settings[ $icon ] ) and '' != $this->stored_settings[ $icon ] ) {
 
                     $nofollow = '';
                     if ( !isset( $this->stored_settings[ $icon . '_nofollow' ] ) ) {
@@ -1076,18 +1061,18 @@ class Speed_Contact_Bar {
                     }
 
                     $icons_list[] = sprintf(
-						'<li class="scb-%s"><a%s href="skype:%s"%s><img src="%sassets/images/%s.svg" width="%d" height="%d" alt="%s" /></a></li>',
-						$icon,
+                        '<li class="scb-%s"><a%s href="skype:%s"%s><img src="%sassets/images/%s.svg" width="%d" height="%d" alt="%s" /></a></li>',
+                        $icon,
                         $nofollow,
                         esc_attr( $this->stored_settings[ $icon ] ),
-						$this->link_target,
-						$this->plugin_root_url,
-						$icon,
-						$this->current_icon_size,
-						$this->current_icon_size,
-						ucfirst( $icon ) 
-					);
-				} // if (icon)
+                        $this->link_target,
+                        $this->plugin_root_url,
+                        $icon,
+                        $this->current_icon_size,
+                        $this->current_icon_size,
+                        ucfirst( $icon )
+                    );
+                } // if (icon)
 			} else {
 				if ( isset( $this->stored_settings[ $icon ] ) and '' != $this->stored_settings[ $icon ] ) {
 
@@ -1204,7 +1189,7 @@ class Speed_Contact_Bar {
 		$content .= $this->current_icon_size;
 		$content .= 'px;}';
 		$content .= ' #scb-wrapper .scb-email {padding-right:1em;}';
-		$content .= ' #scb-wrapper .scb-email a span, #scb-wrapper .scb-sms a span, #scb-wrapper .scb-whatsapp a span, #scb-wrapper .scb-messenger a span, #scb-wrapper .scb-telegram a span {margin: 0 .3em;}';
+		$content .= ' #scb-wrapper .scb-email a span, #scb-wrapper .scb-sms a span, #scb-wrapper .scb-whatsapp a span, #scb-wrapper .scb-wechat a span, #scb-wrapper .scb-messenger a span, #scb-wrapper .scb-telegram a span {margin: 0 .3em;}';
 		$content .= ' #scb-wrapper li a span {white-space:nowrap;}';
 		$content .= "\n";
 		//$content .= '@media screen and (min-width:640px) {#scb-wrapper.scb-fixed {position:fixed;';
@@ -1353,19 +1338,6 @@ class Speed_Contact_Bar {
 			$content .= sprintf( '#scb-wrapper %s { display: inline; left: -32768px; margin: 0; padding: 0; position: absolute; top: 0; z-index: 1000; } ', $headline_tag );
 			$content .= "\n";
 		}
-		
-		// custom sizes for icons with given aspect ratio
-		foreach ( $this->valid_social_networks as $icon ) {
-			if ( in_array( $icon, array_keys( $this->alt_aspect_ratios ) ) and isset( $this->stored_settings[ $icon ] ) and '' != $this->stored_settings[ $icon ] ) {
-				$content .= sprintf( 
-					'#scb-wrapper #scb-%s img {width:%dpx;height:%dpx;}',
-					$icon,
-					intval( round( $this->alt_aspect_ratios[ $icon ] * $this->current_icon_size ) ),
-					$this->current_icon_size
-				);
-				$content .= "\n";
-			}// if (aspect ratio and icon)
-		} // foreach(icon)
 		
 		// close style block
 		$content .= '</style>';

@@ -282,7 +282,6 @@ class Speed_Contact_Bar_Admin {
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
 			$root_url = plugin_dir_url( dirname( __FILE__ ) );
-			$pngs = array( 'soundcloud', 'snap' ); // PNG image file namens
 			echo '<style type="text/css">';
 			print "\n";
 			$background_size = '40px 40px';
@@ -299,51 +298,34 @@ class Speed_Contact_Bar_Admin {
 				print "\n";
 			}
 			foreach ( $this->social_networks as $name ) {
-				if ( in_array( $name, $pngs ) ) {
-					printf(
-						".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s.png') no-repeat scroll 0 %s transparent; background-size: %s; }",
-						$name,
-						$root_url,
-						$name,
-						$background_position,
+                if( 'twitter' == $name ) {
+                    printf(
+                        ".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s.svg') no-repeat scroll 0 %s transparent; background-size: %s; }",
+                        $name,
+                        $root_url,
+                        'x',
+                        $background_position,
                         $background_size
-					);
-				} else {
+                    );
+                }
+                else {
 
-                    if( 'twitter' == $name ) {
-                        printf(
-                            ".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s.svg') no-repeat scroll 0 %s transparent; background-size: %s; }",
-                            $name,
-                            $root_url,
-                            'x',
-                            $background_position,
-                            $background_size
-                        );
-                    }
-                    else {
+                    printf(
+                        ".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s.svg') no-repeat scroll 0 %s transparent; background-size: %s; }",
+                        $name,
+                        $root_url,
+                        $name,
+                        $background_position,
+                        $background_size
+                    );
 
-                        printf(
-                            ".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s.svg') no-repeat scroll 0 %s transparent; background-size: %s; }",
-                            $name,
-                            $root_url,
-                            $name,
-                            $background_position,
-                            $background_size
-                        );
+                }
 
-                    }
-
-				}
-				print "\n";
+                print "\n";
 			}
 			foreach ( array( 'whatsapp', 'messenger', 'telegram', 'wechat' ) as $name ) {
-				switch ( $name ) {
-					case 'whatsapp':
-						$file_name = $name . '.png';
-						break;
-					default:
-						$file_name = $name . '.svg';
-				}
+				$file_name = $name . '.svg';
+
 				printf(
 					".form-table th label[for='%s'] { display: block; height: 85px; background: url('%spublic/assets/images/%s') no-repeat scroll 0 %s transparent; background-size: %s; }",
 					$name,

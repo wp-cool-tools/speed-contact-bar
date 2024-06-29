@@ -85,10 +85,11 @@ Speed Contact Bar supports links to these **social media platforms**, as ordered
 14. X (former Twitter)
 15. Vimeo
 16. WhatsApp
-17. Xing
-18. Yelp
-19. Youtube
-20. any further content you wish by using the filter hook `speed_contact_bar_icons` (as documented in FAQ section &quot;How to add and re-order list entries by using hooks&quot;).
+17. WeChat
+18. Xing
+19. Yelp
+20. YouTube
+20. Any further content you wish by using the filter hook `speed_contact_bar_icons` (as documented in FAQ section &quot;How to add and re-order list entries by using hooks&quot;).
 
 More social media platforms will come in future.
 
@@ -107,7 +108,7 @@ You can set the **design of the contact bar** easily, fast and safe to be suitab
 9. **Background color** of the contact bar or a **transparent bar**
 10. **Background color opacity** of the contact bar, i.e. its grade of transparency
 11. **Text color**
-12 **Link color**
+12  **Link color**
 13. **Lightness of icons**: You can select between **dark** or **bright** icons
 14. **Content alignment** within the bar
 15. **Font size** of the texts and links
@@ -198,7 +199,7 @@ The following function does two things:
 1. it adds a list item with the content 'Hello World' as the first item 
 2. and it changes the order of the list items.
 
-At the end the function returns the changed list.
+In the end, the function returns the changed list.
 
 `// Passed parameter: an array of personal contact data as list items
 function change_speed_contact_bar_data ( $list_items ) {
@@ -286,7 +287,7 @@ add_filter( 'speed_contact_bar_icons', 'change_speed_contact_bar_icons' );`
 = How to add style sheets for the search box? =
 The following function appends some Cascading Style Sheets code for the search form inserted by the previous function.
 
-At the end the function returns the changed CSS code.
+In the end, the function returns the changed CSS code.
 
 `// Passed parameter: a string of CSS
 function change_speed_contact_bar_style ( $css_code ) {
@@ -338,6 +339,7 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 
 = 6.13.0 =
 * new WeChat
+* optimized logos and replaced png with svg (vector) files (modern WhatsApp, Snapchat, Soundcloud)
 * fixed wrong ration with IMDb logo and replaced png with SVG
 * fixed wrong ration with Yelp logo and replaced png with SVG
 * tested with WordPress 6.6
