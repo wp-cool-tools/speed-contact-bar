@@ -175,8 +175,8 @@ The most likely reason is the **WordPress Admin Bar fixed on top of the page**. 
 
 You have two possibilities to see the bar:
 
-1. Go to your user profile in the backend a deactivate the checkbox at "Show admin bar"
-2. Use another browser, as unlogged visitor
+1. Go to your user profile in the backend and deactivate the checkbox at "Show admin bar"
+2. Use another browser, as a not logged in user
 
 = How to add and re-order list entries by using hooks? =
 Repeatedly users ask for special things to be included in the contact bar. Of course, if you know how to code with PHP, HTML and CSS you can change the plugin's code and insert whatever you want.
