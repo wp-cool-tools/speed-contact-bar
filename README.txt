@@ -15,7 +15,7 @@ Let your website visitors get in touch with you easily with permanent visible co
 
 Let your website visitors get in touch with you easily with permanent visible contact information.
 
-The plugin is available in English, Spanish (Español), Russian (ру́сский), German (Deutsch) and Polish (Polski). You can add further translations with WPML.
+The plugin is available in English, Spanish (Español), Russian (ру́сский), German (Deutsch) and Polish (Polski). You can add further translations by contributing to [GlotPress](https://translate.wordpress.org/projects/wp-plugins/speed-contact-bar/)
 
 The plugin does not collect any personal data, so it is ready for EU General Data Protection Regulation (GDPR) compliance.
 
@@ -28,7 +28,7 @@ The bar design is responsive and thus ready for smartphones and tablets. The soc
 Each icon appears if you set its target URL in the option page. The phone icons and numbers are clickable to trigger a phone call. The e-mail is clickable to open a mail client.
 
 = Demo =
-You want to test Speed Contact Bar before installing on your site? Try it out on your free dummy site and [click here](https://demo.tastewp.com/speed-contact-bar).
+You want to test Speed Contact Bar before installing on your site? Try it out on your free WordPress playground and [click here](https://playground.wordpress.net/?theme=twentytwentyone&plugin=speed-contact-bar).
 
 = What users said =
 
@@ -342,7 +342,7 @@ Please write your request in the plugin's [support forum at wordpress.org](http:
 * optimized logos and replaced png with svg (vector) files (modern WhatsApp, Snapchat, Soundcloud)
 * fixed wrong ration with IMDb logo and replaced png with SVG
 * fixed wrong ration with Yelp logo and replaced png with SVG
-* tested with WordPress 6.6-6.7
+* tested with WordPress 6.6-7.0
 
 = 6.12.1.1 =
 * hotfix white screen
